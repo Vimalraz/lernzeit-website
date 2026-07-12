@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Priya S.",
+    "role": "Mum of two, Seattle",
+    "rating": 5,
+    "title": "Finally, ten minutes that count",
+    "text": "Between meetings and school runs I get maybe ten minutes of focused time with my daughter. These cards make those minutes actually mean something. She asks for them — I never have to push.",
+    "product": "Alphabet Adventures",
+    "verified": true
+  },
+  {
+    "name": "Daniel K.",
+    "role": "Dad of a 7-year-old",
+    "rating": 5,
+    "title": "Times tables without tears",
+    "text": "We tried apps. We tried worksheets. The traffic-light sorting in this box is the first thing my son has stuck with. He runs his own practice now and shows me his 'green pile' at dinner.",
+    "product": "Times Tables Master",
+    "verified": true
+  },
+  {
+    "name": "Ananya R.",
+    "role": "Working mum, London",
+    "rating": 5,
+    "title": "The quality surprised me",
+    "text": "Thick cards, lovely rounded corners, and they've survived six months of a toddler's backpack. You can tell parents designed these — the prompts on the back tell you exactly what to say.",
+    "product": "My First Words",
+    "verified": true
+  },
+  {
+    "name": "Marcus T.",
+    "role": "Dad of three",
+    "rating": 4,
+    "title": "Our restaurant secret weapon",
+    "text": "The riddle cards live in my jacket pocket. Waiting for food used to mean screens; now it's the whole table arguing over a puzzle. Genuinely fun for adults too.",
+    "product": "Brain Teasers & Riddles",
+    "verified": true
+  },
+  {
+    "name": "Elena V.",
+    "role": "Mum of a 4-year-old",
+    "rating": 5,
+    "title": "Helped us through big feelings",
+    "text": "The emotions cards gave my daughter words for what she feels. 'I'm frustrated, not angry' — from a four-year-old. Worth every penny for that sentence alone.",
+    "product": "Emotions & Feelings",
+    "verified": true
+  },
+  {
+    "name": "James W.",
+    "role": "Grandad & frequent gifter",
+    "rating": 5,
+    "title": "My go-to birthday gift now",
+    "text": "I've gifted the World Wonders set three times. Beautifully boxed, feels premium, and parents thank me weeks later — which never happened with toys.",
+    "product": "World Wonders",
+    "verified": true
+  }
+]

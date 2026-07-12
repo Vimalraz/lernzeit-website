@@ -1,0 +1,25 @@
+{
+  "slug": "alphabet-adventures",
+  "title": "Alphabet Adventures",
+  "tagline": "26 letters, 26 little stories — phonics that sticks.",
+  "description": "Thick, wipe-clean letter cards pairing every letter with a vivid illustration and a phonics prompt on the back. Designed for five-minute sessions that fit between dinner and bedtime.",
+  "benefits": [
+    "Builds letter recognition and first phonics sounds",
+    "Back-of-card prompts tell you exactly what to ask — zero prep",
+    "Rounded, wipe-clean cards survive juice, jam and journeys"
+  ],
+  "images": [
+    "/images/products/alphabet-adventures-1.svg",
+    "/images/products/alphabet-adventures-2.svg",
+    "/images/products/alphabet-adventures-3.svg"
+  ],
+  "amazonUrl": "https://www.amazon.com/dp/PLACEHOLDER01",
+  "age": { "min": 2, "max": 4, "label": "Ages 2–4" },
+  "learningNeeds": ["Reading & Phonics", "Language & Vocabulary"],
+  "useCases": ["Early prep for school", "Quiet time", "Travel & commute"],
+  "difficulty": "Beginner",
+  "badges": { "bestSeller": true, "newArrival": false, "mostGifted": true },
+  "comparison": { "cards": 52, "focus": "Letters & phonics", "format": "A6 rounded, laminated" },
+  "rating": 4.8,
+  "reviewCount": 412
+}

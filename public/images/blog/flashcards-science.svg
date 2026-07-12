@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <rect width="1200" height="675" fill="#e3efec"/>
+  <circle cx="120" cy="600" r="220" fill="#10695e" opacity="0.10"/>
+  <g transform="translate(880 300) rotate(-8)">
+    <rect x="-85" y="-115" width="170" height="230" rx="26" fill="#10695e" stroke="rgba(27,23,18,0.08)" stroke-width="2"/>
+    <text x="0" y="18" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="112" font-weight="700" fill="#fff">A</text>
+  </g><g transform="translate(1010 320) rotate(9)">
+    <rect x="-85" y="-115" width="170" height="230" rx="26" fill="#ffffff" stroke="rgba(27,23,18,0.08)" stroke-width="2"/>
+    <text x="0" y="18" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="112" font-weight="700" fill="#1b1712">B</text>
+  </g>
+  <text x="90" y="560" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="52" font-weight="700" fill="#1b1712">Why flashcards work: the science</text>
+  <text x="90" y="615" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="26" fill="#0b4c44">lernzit · learning hub</text></svg>

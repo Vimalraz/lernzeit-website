@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <rect width="1200" height="900" fill="#fdf3e2"/>
+  <g transform="translate(480 400) rotate(-10)">
+    <rect x="-110" y="-150" width="220" height="300" rx="26" fill="#e9a13b" stroke="rgba(27,23,18,0.08)" stroke-width="2"/>
+    <text x="0" y="18" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="112" font-weight="700" fill="#fff">1</text>
+  </g><g transform="translate(720 400) rotate(8)">
+    <rect x="-110" y="-150" width="220" height="300" rx="26" fill="#ffffff" stroke="rgba(27,23,18,0.08)" stroke-width="2"/>
+    <text x="0" y="18" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="112" font-weight="700" fill="#1b1712">2</text>
+  </g>
+  <text x="600" y="800" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="34" font-weight="600" fill="#1b1712">Print &amp; paper testing</text></svg>

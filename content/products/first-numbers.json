@@ -1,0 +1,25 @@
+{
+  "slug": "first-numbers",
+  "title": "First Numbers 1–20",
+  "tagline": "Counting, quantity and number sense — one dot at a time.",
+  "description": "Number cards that show the numeral, the word and countable objects, so children connect symbols to real quantities. The back of each card has a mini game you can play anywhere.",
+  "benefits": [
+    "Connects numerals to real quantities, not just memorised order",
+    "One mini game per card — playable in a waiting room",
+    "Progresses gently from 1–10 to 11–20"
+  ],
+  "images": [
+    "/images/products/first-numbers-1.svg",
+    "/images/products/first-numbers-2.svg",
+    "/images/products/first-numbers-3.svg"
+  ],
+  "amazonUrl": "https://www.amazon.com/dp/PLACEHOLDER02",
+  "age": { "min": 2, "max": 4, "label": "Ages 2–4" },
+  "learningNeeds": ["Numbers & Math"],
+  "useCases": ["Early prep for school", "Quiet time", "Travel & commute"],
+  "difficulty": "Beginner",
+  "badges": { "bestSeller": true, "newArrival": false, "mostGifted": false },
+  "comparison": { "cards": 40, "focus": "Counting & number sense", "format": "A6 rounded, laminated" },
+  "rating": 4.7,
+  "reviewCount": 298
+}

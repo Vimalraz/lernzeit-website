@@ -1,0 +1,25 @@
+{
+  "slug": "sight-words-level-1",
+  "title": "Sight Words — Level 1",
+  "tagline": "The 100 words that unlock first sentences.",
+  "description": "The hundred most common words young readers meet, sequenced the way schools teach them. Each card includes a sentence starter on the back so practice feels like conversation, not a quiz.",
+  "benefits": [
+    "Covers the 100 highest-frequency early reading words",
+    "Sentence starters turn drills into real conversation",
+    "Colour-banded levels show progress children can see"
+  ],
+  "images": [
+    "/images/products/sight-words-level-1-1.svg",
+    "/images/products/sight-words-level-1-2.svg",
+    "/images/products/sight-words-level-1-3.svg"
+  ],
+  "amazonUrl": "https://www.amazon.com/dp/PLACEHOLDER03",
+  "age": { "min": 4, "max": 6, "label": "Ages 4–6" },
+  "learningNeeds": ["Reading & Phonics", "Language & Vocabulary"],
+  "useCases": ["Homework support", "Early prep for school", "Quiet time"],
+  "difficulty": "Growing",
+  "badges": { "bestSeller": false, "newArrival": false, "mostGifted": false },
+  "comparison": { "cards": 100, "focus": "High-frequency words", "format": "A7 rounded, ring bound" },
+  "rating": 4.6,
+  "reviewCount": 187
+}

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <rect width="1200" height="675" fill="#fbe9e2"/>
+  <circle cx="120" cy="600" r="220" fill="#e05a3a" opacity="0.10"/>
+  <circle cx="930" cy="300" r="150" fill="none" stroke="#e05a3a" stroke-width="16"/><path d="M930 220 v80 l60 40" stroke="#e05a3a" stroke-width="16" fill="none" stroke-linecap="round"/>
+  <text x="90" y="560" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="52" font-weight="700" fill="#1b1712">The ten-minute learning ritual</text>
+  <text x="90" y="615" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="26" fill="#bf4326">lernzit · learning hub</text></svg>

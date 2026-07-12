@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <rect width="1200" height="675" fill="#fdf3e2"/>
+  <circle cx="120" cy="600" r="220" fill="#e9a13b" opacity="0.10"/>
+  <path d="M930 400 c-80 -70 -140 -120 -140 -190 a80 80 0 0 1 140 -50 a80 80 0 0 1 140 50 c0 70 -60 120 -140 190z" fill="#e9a13b"/>
+  <text x="90" y="560" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="52" font-weight="700" fill="#1b1712">Winning back screen-free evenings</text>
+  <text x="90" y="615" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="26" fill="#c17f21">lernzit · learning hub</text></svg>

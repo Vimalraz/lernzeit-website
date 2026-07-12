@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <rect width="1200" height="900" fill="#faf7f1"/>
+  <rect x="0" y="620" width="1200" height="280" fill="#fbe9e2"/>
+  <g transform="translate(390 430) rotate(-12)">
+    <rect x="-150" y="-200" width="300" height="400" rx="26" fill="#e05a3a" stroke="rgba(27,23,18,0.08)" stroke-width="2"/>
+    <text x="0" y="18" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="112" font-weight="700" fill="#ffffff">P</text>
+  </g>
+  <g transform="translate(620 400) rotate(2)">
+    <rect x="-150" y="-200" width="300" height="400" rx="26" fill="#ffffff" stroke="rgba(27,23,18,0.08)" stroke-width="2"/>
+    <text x="0" y="18" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="112" font-weight="700" fill="#1b1712">H</text>
+  </g>
+  <g transform="translate(850 440) rotate(11)">
+    <rect x="-150" y="-200" width="300" height="400" rx="26" fill="#bf4326" stroke="rgba(27,23,18,0.08)" stroke-width="2"/>
+    <text x="0" y="18" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="112" font-weight="700" fill="#ffffff">O</text>
+  </g>
+  <text x="600" y="820" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="34" font-weight="600" fill="#1b1712">66 cards · Blends &amp; digraphs</text></svg>

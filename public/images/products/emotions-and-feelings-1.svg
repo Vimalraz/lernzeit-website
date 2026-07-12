@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <rect width="1200" height="900" fill="#fbe9e2"/>
+  <circle cx="1010" cy="140" r="220" fill="#e05a3a" opacity="0.12"/>
+  <circle cx="150" cy="780" r="260" fill="#e05a3a" opacity="0.10"/>
+  <g transform="translate(600 430) rotate(-4)">
+    <rect x="-190" y="-250" width="380" height="500" rx="26" fill="#ffffff" stroke="rgba(27,23,18,0.08)" stroke-width="2"/>
+    <text x="0" y="18" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="112" font-weight="700" fill="#1b1712">E</text>
+  </g>
+  <text x="600" y="800" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="44" font-weight="600" fill="#1b1712">Emotions &amp; Feelings</text>
+  <text x="600" y="848" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="26" fill="#bf4326">lernzit · Ages 3–7</text></svg>

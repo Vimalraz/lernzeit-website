@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <rect width="1200" height="900" fill="#faf7f1"/>
+  <rect x="300" y="250" width="600" height="380" rx="30" fill="#ffffff"/><line x1="360" y1="340" x2="840" y2="340" stroke="#e3efec" stroke-width="18" stroke-linecap="round"/><line x1="360" y1="420" x2="760" y2="420" stroke="#e3efec" stroke-width="18" stroke-linecap="round"/><line x1="360" y1="500" x2="800" y2="500" stroke="#e3efec" stroke-width="18" stroke-linecap="round"/>
+  <text x="600" y="800" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="34" font-weight="600" fill="#1b1712">Choosing words that work</text></svg>

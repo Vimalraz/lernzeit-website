@@ -1,0 +1,25 @@
+{
+  "slug": "animal-kingdom",
+  "title": "Animal Kingdom",
+  "tagline": "Roar, waddle and wonder — first science through animals.",
+  "description": "Fifty beloved animals with their habitats, sounds and one 'wow' fact each. The back of every card asks a question that gets little ones talking, guessing and giggling.",
+  "benefits": [
+    "First science concepts: habitats, diets, baby animals",
+    "Question prompts build speaking confidence",
+    "Gorgeous illustrations children genuinely want to hold"
+  ],
+  "images": [
+    "/images/products/animal-kingdom-1.svg",
+    "/images/products/animal-kingdom-2.svg",
+    "/images/products/animal-kingdom-3.svg"
+  ],
+  "amazonUrl": "https://www.amazon.com/dp/PLACEHOLDER06",
+  "age": { "min": 3, "max": 6, "label": "Ages 3–6" },
+  "learningNeeds": ["General Knowledge", "Language & Vocabulary"],
+  "useCases": ["Quiet time", "Family game night", "Gifting"],
+  "difficulty": "Beginner",
+  "badges": { "bestSeller": false, "newArrival": false, "mostGifted": true },
+  "comparison": { "cards": 50, "focus": "Animals & habitats", "format": "A6 rounded, laminated" },
+  "rating": 4.8,
+  "reviewCount": 356
+}

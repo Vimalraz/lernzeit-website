@@ -1,0 +1,196 @@
+﻿@import "tailwindcss";
+
+/* ————— Lernzeit design tokens ————— */
+:root {
+  --paper: #faf7f1;
+  --paper-deep: #f2ecdf;
+  --card: #ffffff;
+  --ink: #1b1712;
+  --ink-soft: #5f574c;
+  --accent: #e05a3a; /* persimmon — swap when brand colors arrive */
+  --accent-deep: #bf4326;
+  --accent-soft: #fbe9e2;
+  --teal: #10695e;
+  --teal-deep: #0b4c44;
+  --teal-soft: #e3efec;
+  --gold: #e9a13b;
+  --gold-soft: #fdf3e2;
+  --green: #22a06b; /* "solved / in order" success green */
+  --green-soft: #e2f4ea;
+  --line: #e7dfd2;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-deep: var(--paper-deep);
+  --color-card: var(--card);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-accent: var(--accent);
+  --color-accent-deep: var(--accent-deep);
+  --color-accent-soft: var(--accent-soft);
+  --color-teal: var(--teal);
+  --color-teal-deep: var(--teal-deep);
+  --color-teal-soft: var(--teal-soft);
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --color-green: var(--green);
+  --color-green-soft: var(--green-soft);
+  --color-line: var(--line);
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-fraunces), Georgia, serif;
+
+  --radius-card: 1.25rem;
+  --radius-tile: 1.75rem;
+
+  --shadow-card: 0 1px 2px rgb(27 23 18 / 0.05), 0 12px 32px -12px rgb(27 23 18 / 0.18);
+  --shadow-lift: 0 2px 4px rgb(27 23 18 / 0.06), 0 24px 48px -16px rgb(27 23 18 / 0.28);
+}
+
+body {
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--accent);
+  color: #fff;
+}
+
+:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 2px;
+}
+
+/* Flashcard 3D helpers */
+.perspective-1200 {
+  perspective: 1200px;
+}
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Subtle paper grain so large fields of color don't read flat */
+.grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.35;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.09 0 0 0 0 0.07 0 0 0 0.04 0'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Blog article typography (WP content arrives as HTML) */
+.prose-lz {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: var(--ink);
+}
+.prose-lz > * + * {
+  margin-top: 1.25em;
+}
+.prose-lz h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-top: 2em;
+}
+.prose-lz h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-top: 1.75em;
+}
+.prose-lz a {
+  color: var(--teal);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.prose-lz blockquote {
+  border-left: 3px solid var(--accent);
+  padding-left: 1.25rem;
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-style: italic;
+  color: var(--ink-soft);
+}
+.prose-lz ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+.prose-lz ol {
+  list-style: decimal;
+  padding-left: 1.5rem;
+}
+.prose-lz li + li {
+  margin-top: 0.5em;
+}
+.prose-lz img {
+  border-radius: var(--radius-card);
+  max-width: 100%;
+  height: auto;
+}
+.prose-lz figcaption {
+  font-size: 0.875rem;
+  color: var(--ink-soft);
+  margin-top: 0.5em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* One-shot 3D spin for the flip icon — replays on each fresh card hover */
+@keyframes icon-flip {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
+}
+
+/* Flowing gradient border for solved flashcards */
+.flip-ring {
+  background: linear-gradient(
+    115deg,
+    var(--green) 0%,
+    #52d98a 22%,
+    var(--teal) 44%,
+    #8be9b4 66%,
+    var(--gold) 82%,
+    var(--green) 100%
+  );
+  background-size: 300% 300%;
+  animation: ring-flow 3.2s ease-in-out infinite;
+}
+@keyframes ring-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Marquee animation for brand strip */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 28s linear infinite;
+  display: flex;
+  width: max-content;
+}

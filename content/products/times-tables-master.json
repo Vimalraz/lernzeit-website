@@ -1,0 +1,25 @@
+{
+  "slug": "times-tables-master",
+  "title": "Times Tables Master",
+  "tagline": "Multiplication confidence in five minutes a day.",
+  "description": "Every fact from 2× to 12×, with the answer and a memory trick on the back. A traffic-light sorting system lets your child run their own practice — you just check in.",
+  "benefits": [
+    "Memory tricks on every card, not just bare answers",
+    "Traffic-light sorting builds independent practice habits",
+    "Aligned with school expectations for ages 7–10"
+  ],
+  "images": [
+    "/images/products/times-tables-master-1.svg",
+    "/images/products/times-tables-master-2.svg",
+    "/images/products/times-tables-master-3.svg"
+  ],
+  "amazonUrl": "https://www.amazon.com/dp/PLACEHOLDER04",
+  "age": { "min": 7, "max": 10, "label": "Ages 7–10" },
+  "learningNeeds": ["Numbers & Math"],
+  "useCases": ["Homework support", "Quiet time"],
+  "difficulty": "Confident",
+  "badges": { "bestSeller": true, "newArrival": false, "mostGifted": false },
+  "comparison": { "cards": 144, "focus": "Multiplication facts", "format": "A7, boxed with dividers" },
+  "rating": 4.9,
+  "reviewCount": 521
+}

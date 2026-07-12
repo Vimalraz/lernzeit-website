@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <rect width="1200" height="900" fill="#10695e"/>
+  <circle cx="1060" cy="120" r="300" fill="#ffffff" opacity="0.08"/>
+  <g transform="translate(600 430) rotate(-3)">
+    <rect x="-260" y="-210" width="520" height="420" rx="36" fill="#ffffff"/>
+    <rect x="-260" y="-210" width="520" height="120" rx="36" fill="#e3efec"/>
+    <text x="0" y="-132" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="40" font-weight="700" fill="#0b4c44">lernzit</text>
+    <text x="0" y="30" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="52" font-weight="700" fill="#1b1712">World Wonders</text>
+    <text x="0" y="90" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="30" fill="#5f574c">Ages 6–10</text>
+    <rect x="-90" y="130" width="180" height="52" rx="26" fill="#10695e"/>
+    <text x="0" y="164" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="26" font-weight="600" fill="#ffffff">Growing</text>
+  </g></svg>
