@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "Practical, science-backed ideas for busy families — short reads on routines, learning science and screen-free childhood.",
 };
 
-export const revalidate = 60;
+// Static export: blog index is pre-rendered at build time.
 
 function formatDate(iso: string) {
   return new Date(iso).toLocaleDateString("en-US", {

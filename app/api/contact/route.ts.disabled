@@ -1,3 +1,9 @@
+// NOTE: This API route is NOT included in the static export (output: "export").
+// For Cloudflare Pages deployment, replace this with a third-party form service
+// such as Formspree (formspree.io) or Web3Forms (web3forms.com).
+// Update components/forms/ContactForm.tsx to POST to the third-party endpoint.
+export const dynamic = "force-dynamic";
+
 import { NextResponse } from "next/server";
 import { sendEmail, type ContactMessage } from "@/lib/email";
 

@@ -11,7 +11,7 @@ import featured from "@/content/featured-product.json";
 
 type Params = { slug: string };
 
-export const revalidate = 60;
+// Static export: all blog pages are pre-rendered at build time via generateStaticParams.
 
 export async function generateStaticParams(): Promise<Params[]> {
   const posts = await getPosts();
