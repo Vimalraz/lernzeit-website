@@ -14,7 +14,11 @@ export default function Accordion({
       {items.map((item, i) => {
         const open = openIdx === i;
         return (
-          <div key={item.q}>
+          <div key={item.q} className="group relative transition-colors duration-300 ease-out hover:bg-teal-soft">
+            <span
+              aria-hidden
+              className="pointer-events-none absolute left-0 top-0 h-full w-[3px] origin-bottom scale-y-0 bg-teal transition-transform duration-300 ease-out group-hover:scale-y-100"
+            />
             <button
               type="button"
               aria-expanded={open}
@@ -26,8 +30,10 @@ export default function Accordion({
               </span>
               <span
                 aria-hidden
-                className={`flex h-8 w-8 flex-none items-center justify-center rounded-full border border-line text-lg transition-transform duration-300 ${
-                  open ? "rotate-45 border-accent text-accent" : ""
+                className={`flex h-8 w-8 flex-none items-center justify-center rounded-full border border-line text-lg ${
+                  open
+                    ? "rotate-45 border-accent text-accent transition-transform duration-300"
+                    : "bg-card transition-all duration-[450ms] ease-[cubic-bezier(.34,1.56,.64,1)] group-hover:rotate-90 group-hover:border-teal group-hover:text-teal"
                 }`}
               >
                 +

@@ -23,10 +23,16 @@ export function AmazonButton({
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className={`${base} ${sizes[size]} bg-ink text-paper hover:bg-accent hover:shadow-lift ${className}`}
+      className={`group relative overflow-hidden inline-flex items-center justify-center gap-2.5 rounded-full bg-ink font-semibold text-paper transition-all duration-300 ease-out hover:-translate-y-0.5 hover:shadow-lift active:translate-y-0 active:scale-[0.97] ${sizes[size]} ${className}`}
     >
-      <CartGlyph />
-      {children}
+      <span
+        aria-hidden
+        className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/25 to-transparent transition-transform duration-700 ease-out group-hover:translate-x-full"
+      />
+      <span className="relative flex h-6 w-6 flex-none items-center justify-center rounded-full bg-white/15 transition-colors duration-300 ease-out group-hover:bg-accent">
+        <CartGlyph />
+      </span>
+      <span className="relative">{children}</span>
     </a>
   );
 }

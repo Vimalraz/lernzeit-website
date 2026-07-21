@@ -1,3 +1,4 @@
+import { cloneElement } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import HeroCardArrange from "@/components/hero/HeroCardArrange";
@@ -99,7 +100,15 @@ export default function HomePage() {
           <p className="mb-3 text-center text-[11px] font-semibold uppercase tracking-widest text-ink-soft/60">
             Trusted by Indian Parents & Teachers
           </p>
-          <div className="flex select-none overflow-hidden w-full">
+          <div
+            className="flex select-none overflow-hidden w-full"
+            style={{
+              WebkitMaskImage:
+                "linear-gradient(90deg, transparent 0, #000 8%, #000 92%, transparent 100%)",
+              maskImage:
+                "linear-gradient(90deg, transparent 0, #000 8%, #000 92%, transparent 100%)",
+            }}
+          >
             {/* First container */}
             <div className="flex shrink-0 items-center gap-12 animate-marquee whitespace-nowrap">
               {[
@@ -160,15 +169,50 @@ export default function HomePage() {
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {PARENT_BENEFITS.map((b, i) => (
             <Reveal key={b.title} delay={i * 0.1}>
-              <div className="w-full aspect-[1523/2293] rounded-tile border border-line bg-card p-7 shadow-card flex flex-col justify-start">
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-accent-soft text-accent">
-                  {b.icon}
-                </span>
-                <h3 className="mt-5 text-lg font-bold tracking-tight">{b.title}</h3>
-                <p className="mt-2 text-[15px] leading-relaxed text-ink-soft">
-                  {b.text}
-                </p>
-              </div>
+              <Flashcard
+                className="h-[320px] w-full"
+                ariaLabel={`${b.title} — tap to flip`}
+                front={
+                  <div className="relative flex h-full w-full flex-col overflow-hidden rounded-tile border border-line bg-card p-7 shadow-card">
+                    <div
+                      className="pointer-events-none absolute -right-8 -top-8 h-32 w-32 rounded-full bg-accent-soft/70 blur-2xl"
+                      aria-hidden
+                    />
+                    <span
+                      className="relative flex h-16 w-16 flex-none items-center justify-center rounded-[26px] bg-accent-soft text-accent"
+                      aria-hidden
+                    >
+                      {cloneElement(b.icon, { size: 30 })}
+                      <span className="absolute -right-1.5 -top-1.5 h-3.5 w-3.5 rounded-full bg-gold ring-2 ring-card" />
+                    </span>
+                    <h3 className="relative mt-5 text-lg font-bold tracking-tight">{b.title}</h3>
+                    <p className="relative mt-2 text-[15px] leading-relaxed text-ink-soft">
+                      {b.text}
+                    </p>
+                    <span className="relative mt-auto flex w-fit items-center gap-1.5 self-start rounded-full bg-paper-deep px-3 py-1.5 text-[11px] font-semibold text-ink-soft/70">
+                      <FlipHintGlyph /> Tap to flip
+                    </span>
+                  </div>
+                }
+                back={
+                  <div
+                    className="flex h-full w-full flex-col justify-between rounded-tile p-7 text-paper shadow-card"
+                    style={{ background: "linear-gradient(155deg, var(--ink) 0%, #2a231b 100%)" }}
+                  >
+                    <div>
+                      <span className="font-display text-[14px] font-semibold italic text-accent">
+                        {b.backLabel}
+                      </span>
+                      <p className="mt-3 text-[16px] leading-relaxed text-paper/90">
+                        {b.backText}
+                      </p>
+                    </div>
+                    <span className="flex w-fit items-center gap-1.5 self-start rounded-full bg-white/10 px-3 py-1.5 text-[11px] font-semibold text-paper/70">
+                      <FlipHintGlyph /> Flip back
+                    </span>
+                  </div>
+                }
+              />
             </Reveal>
           ))}
         </div>
@@ -187,15 +231,50 @@ export default function HomePage() {
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {CHILD_BENEFITS.map((b, i) => (
               <Reveal key={b.title} delay={i * 0.1}>
-                <div className="w-full aspect-[1523/2293] rounded-tile bg-card p-7 shadow-card flex flex-col justify-start">
-                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-teal-soft text-teal">
-                    {b.icon}
-                  </span>
-                  <h3 className="mt-5 text-lg font-bold tracking-tight">{b.title}</h3>
-                  <p className="mt-2 text-[15px] leading-relaxed text-ink-soft">
-                    {b.text}
-                  </p>
-                </div>
+                <Flashcard
+                  className="h-[320px] w-full"
+                  ariaLabel={`${b.title} — tap to flip`}
+                  front={
+                    <div className="relative flex h-full w-full flex-col overflow-hidden rounded-tile border border-line bg-card p-7 shadow-card">
+                      <div
+                        className="pointer-events-none absolute -right-8 -top-8 h-32 w-32 rounded-full bg-teal-soft/80 blur-2xl"
+                        aria-hidden
+                      />
+                      <span
+                        className="relative flex h-16 w-16 flex-none items-center justify-center rounded-[26px] bg-teal-soft text-teal"
+                        aria-hidden
+                      >
+                        {cloneElement(b.icon, { size: 30 })}
+                        <span className="absolute -right-1.5 -top-1.5 h-3.5 w-3.5 rounded-full bg-gold ring-2 ring-card" />
+                      </span>
+                      <h3 className="relative mt-5 text-lg font-bold tracking-tight">{b.title}</h3>
+                      <p className="relative mt-2 text-[15px] leading-relaxed text-ink-soft">
+                        {b.text}
+                      </p>
+                      <span className="relative mt-auto flex w-fit items-center gap-1.5 self-start rounded-full bg-paper px-3 py-1.5 text-[11px] font-semibold text-ink-soft/70">
+                        <FlipHintGlyph /> Tap to flip
+                      </span>
+                    </div>
+                  }
+                  back={
+                    <div
+                      className="flex h-full w-full flex-col justify-between rounded-tile p-7 text-paper shadow-card"
+                      style={{ background: "linear-gradient(155deg, var(--teal-deep) 0%, #0c2521 100%)" }}
+                    >
+                      <div>
+                        <span className="font-display text-[14px] font-semibold italic text-gold">
+                          {b.backLabel}
+                        </span>
+                        <p className="mt-3 text-[16px] leading-relaxed text-paper/90">
+                          {b.backText}
+                        </p>
+                      </div>
+                      <span className="flex w-fit items-center gap-1.5 self-start rounded-full bg-white/10 px-3 py-1.5 text-[11px] font-semibold text-paper/70">
+                        <FlipHintGlyph /> Flip back
+                      </span>
+                    </div>
+                  }
+                />
               </Reveal>
             ))}
           </div>
@@ -232,7 +311,9 @@ export default function HomePage() {
         </Reveal>
       </section>
 
-      {/* ——— Reviews ——— */}
+      {/* ——— Reviews ———
+      Hidden: superseded by the dedicated Wall of Love page. Left intact in case
+      we want to bring a reviews section back to the homepage later.
       <section className="bg-paper-deep/60">
         <div className="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-28">
           <Reveal>
@@ -262,6 +343,7 @@ export default function HomePage() {
           </Reveal>
         </div>
       </section>
+      */}
 
       {/* ——— How learning happens ——— */}
       <section className="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-28">
@@ -374,16 +456,22 @@ const PARENT_BENEFITS = [
     title: "Be present, not prepared",
     text: "No prep. No printouts. No guilt. Just pick a card, start a conversation and enjoy learning together.",
     icon: <Glyph d="M12 8v4l3 3M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z" />,
+    backLabel: "Tonight's 5 minutes",
+    backText: "No lesson plan required — pick any card and start talking. Most families finish a full activity before the kettle boils.",
   },
   {
     title: "Make learning feel like bonding",
     text: "Every activity creates space to listen, laugh and discover how your child sees the world.",
     icon: <Glyph d="M8 7V3m8 4V3M4 11h16M5 5h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z" />,
+    backLabel: "Try this tonight",
+    backText: "Ask one question from tonight's card at dinner. You'll be surprised what your child remembers by morning.",
   },
   {
     title: "Watch their confidence grow",
     text: "As children arrange ideas, tell stories and find their own answers, they learn to express themselves with greater confidence.",
     icon: <Glyph d="M4 20V10m6 10V4m6 16v-7m4 7H2" />,
+    backLabel: "Why it works",
+    backText: "Children answer first, then flip to check — so a wrong guess feels like part of the game, never a test they failed.",
   },
 ];
 
@@ -392,16 +480,22 @@ const CHILD_BENEFITS = [
     title: "No fear of getting it wrong",
     text: "Open-ended activities help children try, rethink and keep going without the pressure of tests or worksheets.",
     icon: <Glyph d="M14.5 4.5 18 8l-9.5 9.5a2.5 2.5 0 0 1-3.5-3.5L14.5 4.5zM13 6l5 5M16 19h6m-3-3v6" />,
+    backLabel: "Play, not a test",
+    backText: "There's no red pen here — just flip the card, laugh at a wrong guess, and try again.",
   },
   {
     title: "Put their thoughts into words",
     text: "Storytelling, sequencing and question games help children organise their ideas and express what they mean.",
     icon: <Glyph d="M12 3l2.7 5.5 6 .9-4.3 4.2 1 6L12 16.8 6.6 19.6l1-6L3.3 9.4l6-.9L12 3z" />,
+    backLabel: "Ask, don't tell",
+    backText: "The best conversations start with \"what do you think happens next?\" — not with an answer.",
   },
   {
     title: "Hands busy. Mind engaged.",
     text: "Sorting, arranging, matching and flipping cards keeps learning active, focused and away from passive screen time.",
     icon: <Glyph d="M7 4h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm5 12h.01" />,
+    backLabel: "Screen-free, by design",
+    backText: "Sorting and flipping real cards keeps little hands moving and little minds thinking — no tablet in sight.",
   },
 ];
 
@@ -423,10 +517,24 @@ const STEPS = [
   },
 ];
 
-function Glyph({ d }: { d: string }) {
+function Glyph({ d, size = 22 }: { d: string; size?: number }) {
   return (
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden>
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden>
       <path d={d} stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+function FlipHintGlyph() {
+  return (
+    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden>
+      <path
+        d="M4 12a8 8 0 0 1 13.66-5.66M20 12a8 8 0 0 1-13.66 5.66M17 3v4h-4M7 21v-4h4"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
   );
 }

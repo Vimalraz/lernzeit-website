@@ -19,7 +19,18 @@
       "Bash(where magick.exe)",
       "Bash(pip list *)",
       "Bash(pip install *)",
-      "Bash(python -c ' *)"
+      "Bash(python -c ' *)",
+      "Bash(sed -i 's#https://link.amazon/B003bHHGq#https://amzn.to/4qpylrw#' content/products/ask-questions-level-1.json)",
+      "Bash(sed -i 's#https://link.amazon/B0j7SMtQ4#https://amzn.to/3ZYwU8y#' content/products/ask-questions-level-2.json)",
+      "Bash(sed -i 's#https://link.amazon/B05EX4tCP#https://amzn.to/3LYEXiB#' content/products/ask-questions-combo.json)",
+      "Bash(sed -i 's#https://link.amazon/B01pr56rG#https://amzn.to/3ZTtvrE#' content/products/everyday-bharat-level-1.json)",
+      "Bash(sed -i 's#https://link.amazon/B0hySO4Uh#https://amzn.to/4qnyVWI#' content/products/everyday-bharat-level-2.json)",
+      "Bash(pandoc -t markdown 'D:/Work + Files/00_Graphic design/17_Renga/v1/lernzit website/Content from ranga/LernZeit Product Picker_Requirements.docx' -o picker_requirements.md)",
+      "Bash(pandoc -t markdown 'D:/Work + Files/00_Graphic design/17_Renga/v1/lernzit website/Content from ranga/Product Page Information.docx' -o product_page_info.md)",
+      "Bash(python -c \"import docx; print\\('ok'\\)\")",
+      "Bash(cat content/featured-blog.json)",
+      "Skill(artifact-design)",
+      "Skill(artifact-design:*)"
     ]
   }
 }

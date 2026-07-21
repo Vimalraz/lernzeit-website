@@ -31,7 +31,7 @@ export default function Footer() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-[15px] text-ink hover:text-accent"
+                    className="w-fit bg-[linear-gradient(var(--accent-deep),var(--accent-deep))] bg-[length:0%_1.5px] bg-[position:0_100%] bg-no-repeat pb-px text-[15px] text-ink transition-all duration-300 ease-out hover:bg-[length:100%_1.5px] hover:text-accent-deep"
                   >
                     {item.label}
                   </Link>
@@ -50,7 +50,7 @@ export default function Footer() {
                   href={site.amazonStoreUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-[15px] text-ink hover:text-accent"
+                  className="inline-flex items-center gap-2 w-fit bg-[linear-gradient(var(--accent-deep),var(--accent-deep))] bg-[length:0%_1.5px] bg-[position:0_100%] bg-no-repeat pb-px text-[15px] text-ink transition-all duration-300 ease-out hover:bg-[length:100%_1.5px] hover:text-accent-deep"
                 >
                   <AmazonIcon />
                   LernZeit on Amazon ↗
@@ -61,7 +61,7 @@ export default function Footer() {
                   href={site.instagramUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-[15px] text-ink hover:text-accent"
+                  className="inline-flex items-center gap-2 w-fit bg-[linear-gradient(var(--accent-deep),var(--accent-deep))] bg-[length:0%_1.5px] bg-[position:0_100%] bg-no-repeat pb-px text-[15px] text-ink transition-all duration-300 ease-out hover:bg-[length:100%_1.5px] hover:text-accent-deep"
                 >
                   <InstagramIcon />
                   Instagram ↗
@@ -72,7 +72,7 @@ export default function Footer() {
                   href={site.youtubeUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-[15px] text-ink hover:text-accent"
+                  className="inline-flex items-center gap-2 w-fit bg-[linear-gradient(var(--accent-deep),var(--accent-deep))] bg-[length:0%_1.5px] bg-[position:0_100%] bg-no-repeat pb-px text-[15px] text-ink transition-all duration-300 ease-out hover:bg-[length:100%_1.5px] hover:text-accent-deep"
                 >
                   <YouTubeIcon />
                   YouTube ↗
@@ -81,7 +81,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/our-story#contact"
-                  className="text-[15px] text-ink hover:text-accent"
+                  className="w-fit bg-[linear-gradient(var(--accent-deep),var(--accent-deep))] bg-[length:0%_1.5px] bg-[position:0_100%] bg-no-repeat pb-px text-[15px] text-ink transition-all duration-300 ease-out hover:bg-[length:100%_1.5px] hover:text-accent-deep"
                 >
                   Contact us
                 </Link>
