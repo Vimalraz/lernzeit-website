@@ -6,7 +6,8 @@ export type Review = {
   rating: number;
   title: string;
   text: string;
-  product: string;
+  product?: string; // optional — legacy field
+  date?: string;   // optional — new Amazon review date
   verified: boolean;
 };
 
@@ -23,12 +24,14 @@ export default function ReviewCard({ review: r }: { review: Review }) {
       </div>
       <p className="mt-4 text-[15px] font-bold">{r.title}</p>
       <blockquote className="mt-2 flex-1 text-[14px] leading-relaxed text-ink-soft">
-        “{r.text}”
+        "{r.text}"
       </blockquote>
       <figcaption className="mt-5 border-t border-line pt-4">
         <span className="block text-[14px] font-semibold">{r.name}</span>
         <span className="block text-[13px] text-ink-soft">
-          {r.role} · {r.product}
+          {r.role}
+          {r.date && <> · Reviewed {r.date}</>}
+          {r.product && !r.date && <> · {r.product}</>}
         </span>
       </figcaption>
     </figure>

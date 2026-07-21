@@ -1,0 +1,31 @@
+{
+  "slug": "everyday-bharat-level-2",
+  "title": "Everyday Bharat Objects — Level 2",
+  "tagline": "Culture-rich objects that inspire richer words, stories and connections.",
+  "description": "Children move beyond naming objects to exploring their cultural meaning, uses and connections with Indian traditions. Story-led activities help them describe, compare and express ideas using stronger vocabulary.",
+  "benefits": [
+    "Expands culturally relevant vocabulary and general awareness",
+    "Encourages description, comparison and storytelling",
+    "Builds appreciation for Indian traditions, crafts and heritage"
+  ],
+  "images": [
+    "/products/everyday-objects-l2-1.png",
+    "/products/everyday-objects-l2-2.png",
+    "/products/everyday-objects-l2-3.png"
+  ],
+  "amazonUrl": "https://link.amazon/B0hySO4Uh",
+  "age": { "min": 6, "max": 10, "label": "Best suited for ages 6–10" },
+  "learningNeeds": ["Build vocabulary & everyday awareness", "Tell stories & organise ideas", "Speak with confidence"],
+  "useCases": ["Parent–child time", "Classroom or small-group use", "Quick 5–10 minute play"],
+  "difficulty": "Growing",
+  "badges": { "bestSeller": false, "newArrival": true, "mostGifted": false },
+  "comparison": { "cards": 40, "focus": "Build vocabulary and everyday awareness", "format": "Double-sided laminated cards with rounded corners" },
+  "bestFor": ["Parent–child time", "Classroom or small-group use", "Quick 5–10 minute play"],
+  "themesIncluded": "Indian traditions, cultural symbols, crafts, music, festivals, rituals, values, heritage, empathy and storytelling.",
+  "familyId": "everyday_objects",
+  "level": "2",
+  "isCombo": false,
+  "adminPriority": 6,
+  "rating": 4.6,
+  "reviewCount": 22
+}

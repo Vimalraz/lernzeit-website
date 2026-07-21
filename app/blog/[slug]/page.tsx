@@ -7,6 +7,7 @@ import Stars from "@/components/ui/Stars";
 import { AmazonButton } from "@/components/ui/Buttons";
 import { getPost, getPosts } from "@/lib/cms";
 import { getProduct } from "@/lib/products";
+import { asset } from "@/lib/site";
 import featured from "@/content/featured-product.json";
 
 type Params = { slug: string };
@@ -73,7 +74,7 @@ export default async function BlogPostPage({
       <Reveal delay={0.1}>
         <div className="relative mt-8 aspect-[16/9] overflow-hidden rounded-tile border border-line bg-paper-deep">
           <Image
-            src={post.coverImage}
+            src={asset(post.coverImage)}
             alt=""
             fill
             priority
@@ -94,7 +95,7 @@ export default async function BlogPostPage({
           <div className="grid sm:grid-cols-[200px_1fr]">
             <div className="relative aspect-[4/3] sm:aspect-auto">
               <Image
-                src={featuredProduct.images[0]}
+                src={asset(featuredProduct.images[0])}
                 alt={featuredProduct.title}
                 fill
                 sizes="(max-width: 640px) 92vw, 200px"

@@ -1,9 +1,9 @@
-﻿import fs from "fs";
+import fs from "fs";
 import path from "path";
 
 /**
  * Blog content adapter.
- * — With WP_API_URL set (e.g. https://cms.Lernzeit.com/wp-json/wp/v2), posts come
+ * — With WP_API_URL set (e.g. https://cms.LernZeit.com/wp-json/wp/v2), posts come
  *   from WordPress: publish in wp-admin and they appear here within a minute (ISR).
  * — Without it, posts come from content/sample-posts/*.json so the site works
  *   locally and before WordPress is installed.
@@ -14,6 +14,7 @@ export type Post = {
   excerpt: string;
   date: string; // ISO
   category: string;
+  categories: string[];
   coverImage: string;
   readingTime: number; // minutes
   contentHtml: string;
@@ -49,16 +50,19 @@ type WpPost = {
 
 function mapWpPost(wp: WpPost): Post {
   const media = wp._embedded?.["wp:featuredmedia"]?.[0]?.source_url;
-  const category =
-    wp._embedded?.["wp:term"]
-      ?.flat()
-      .find((t) => t.taxonomy === "category")?.name ?? "Learning";
+  const wpCats = wp._embedded?.["wp:term"]
+    ?.flat()
+    .filter((t) => t.taxonomy === "category")
+    .map((t) => t.name) ?? [];
+  const categories = wpCats.length > 0 ? wpCats : ["Learning"];
+  const category = categories[0];
   return {
     slug: wp.slug,
     title: stripHtml(wp.title.rendered),
     excerpt: stripHtml(wp.excerpt.rendered),
     date: wp.date,
     category,
+    categories,
     coverImage: media ?? "/images/blog/ten-minute-learning-ritual.svg",
     readingTime: readingTimeOf(wp.content.rendered),
     contentHtml: wp.content.rendered,
@@ -84,10 +88,16 @@ function readSamplePosts(): Post[] {
     .readdirSync(sampleDir)
     .filter((f) => f.endsWith(".json"))
     .map((f) => {
-      const p = JSON.parse(
-        fs.readFileSync(path.join(sampleDir, f), "utf8"),
-      ) as SamplePost;
-      return { ...p, readingTime: readingTimeOf(p.contentHtml) };
+      const raw = fs.readFileSync(path.join(sampleDir, f), "utf8");
+      const p = JSON.parse(raw);
+      const categories = p.categories ?? (p.category ? [p.category] : ["Learning"]);
+      const category = p.category ?? categories[0];
+      return {
+        ...p,
+        category,
+        categories,
+        readingTime: readingTimeOf(p.contentHtml),
+      } as Post;
     })
     .sort((a, b) => +new Date(b.date) - +new Date(a.date));
 }
@@ -112,5 +122,6 @@ export async function getPost(slug: string): Promise<Post | undefined> {
 
 export async function getCategories(): Promise<string[]> {
   const posts = await getPosts();
-  return Array.from(new Set(posts.map((p) => p.category))).sort();
+  const all = posts.flatMap((p) => p.categories);
+  return Array.from(new Set(all)).sort();
 }

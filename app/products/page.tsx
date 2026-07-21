@@ -1,7 +1,7 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Image from "next/image";
 import ProductExplorer from "@/components/products/ProductExplorer";
-import GoalPicker from "@/components/products/GoalPicker";
+import ProductPicker from "@/components/products/ProductPicker";
 import ComparisonTable from "@/components/products/ComparisonTable";
 import FavoritesTabs from "@/components/products/FavoritesTabs";
 import ContactForm from "@/components/forms/ContactForm";
@@ -11,14 +11,14 @@ import Reveal from "@/components/ui/Reveal";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { AmazonButton } from "@/components/ui/Buttons";
 import { getFilterOptions, getProducts } from "@/lib/products";
-import { site } from "@/lib/site";
+import { site, asset } from "@/lib/site";
 import reviews from "@/content/reviews.json";
 import faq from "@/content/faq.json";
 
 export const metadata: Metadata = {
-  title: "Products",
+  title: "Products — LernZeit",
   description:
-    "Premium flashcard sets for ages 1–12 — phonics, numbers, emotions, geography and more. Find the right set with our Learning Goal Picker.",
+    "10 flashcard games across 4 families — Storytelling, Question Quest, Everyday Bharat and Tenses Through Festivals. Find the right game with our interactive picker.",
 };
 
 export default function ProductsPage() {
@@ -32,21 +32,19 @@ export default function ProductsPage() {
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 pb-14 pt-12 md:grid-cols-[1.2fr_1fr] md:px-8 md:pb-20 md:pt-16">
           <Reveal>
             <p className="font-display text-[15px] font-semibold italic text-accent">
-              The Lernzeit collection
+              The LernZeit collection
             </p>
             <h1 className="mt-3 text-4xl font-bold leading-[1.1] tracking-tight md:text-5xl">
-              Every set earns its place in your bag.
+              Four game families. Ten ways to play.
             </h1>
             <p className="mt-4 max-w-lg text-[17px] leading-relaxed text-ink-soft">
-              Eleven flashcard sets across ages 1–12 — each one designed with
-              real families, tested by real children, and sold securely on
-              Amazon.
+              Flashcard games for ages 4–10, built around real Indian life — storytelling, questioning, vocabulary and English tenses. Each one screen-free, ready in seconds and sold securely on Amazon.
             </p>
           </Reveal>
           <Reveal delay={0.15} className="relative hidden aspect-[4/3] md:block">
             <Image
-              src="/images/products/alphabet-adventures-2.svg"
-              alt="A fanned spread of Lernzeit flashcards"
+              src={asset("/products/storytelling-1.png")}
+              alt="LernZeit flashcard games spread"
               fill
               priority
               sizes="(max-width: 1024px) 0px, 480px"
@@ -70,10 +68,10 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      {/* ——— Goal picker ——— */}
-      <section className="mx-auto max-w-6xl px-5 pb-16 md:px-8 md:pb-24" id="picker">
+      {/* ——— Product Picker ——— */}
+      <section className="mx-auto max-w-6xl px-5 pb-16 md:px-8 md:pb-24" id="product-picker">
         <Reveal>
-          <GoalPicker products={products} ageBands={filters.ageBands} />
+          <ProductPicker products={products} />
         </Reveal>
       </section>
 
@@ -110,20 +108,18 @@ export default function ProductsPage() {
               Schools & bulk orders
             </p>
             <h2 className="mt-2 text-3xl font-bold tracking-tight md:text-[36px]">
-              Buying for a classroom, nursery or team?
+              Thoughtful learning tools for classrooms, centres and gifting.
             </h2>
             <p className="mt-4 max-w-md text-[16px] leading-relaxed text-white/80">
-              We offer meaningful discounts for schools, tuition centres and
-              corporate gifting from 10 sets up. Tell us what you need and
-              we'll reply within two working days.
+              Planning for a school, preschool, tuition centre or event? Tell us what you need, and we’ll help you choose the right games, quantities and bulk-order options.
             </p>
           </Reveal>
           <Reveal delay={0.12}>
             <div className="rounded-tile bg-paper p-6 text-ink md:p-8">
               <ContactForm
                 kind="bulk"
-                messagePlaceholder="Which sets, roughly how many, and when do you need them?"
-                submitLabel="Request bulk pricing"
+                messagePlaceholder="Which games are you interested in, how many sets do you need, and by when?"
+                submitLabel="Request Bulk Pricing"
               />
             </div>
           </Reveal>
@@ -135,8 +131,8 @@ export default function ProductsPage() {
         <Reveal>
           <SectionHeading
             align="center"
-            eyebrow="From Amazon reviews"
-            title="Parents put it better than we can"
+            eyebrow="Trusted by Indian families"
+            title="What parents are saying"
           />
         </Reveal>
         <div className="mt-10 grid gap-5 md:grid-cols-3">

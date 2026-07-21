@@ -1,10 +1,10 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ContactForm from "@/components/forms/ContactForm";
 import Reveal from "@/components/ui/Reveal";
 import SectionHeading from "@/components/ui/SectionHeading";
-import { site } from "@/lib/site";
+import { site, asset } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Our Story",
@@ -14,24 +14,24 @@ export const metadata: Metadata = {
 
 const BELIEFS = [
   {
-    title: "Small moments beat big plans",
-    text: "Ten focused minutes a day outlearns the weekend cram that never happens. We design for the minutes families actually have.",
+    title: "Curiosity before correction",
+    text: "Children learn more deeply when they first have space to observe, wonder and try. Our cards invite them to think before they flip and check.",
   },
   {
-    title: "Parents are teachers already",
-    text: "You don't need training — you need good prompts. Every card back makes you the confident guide you already are.",
+    title: "Conversation before instruction",
+    text: "Learning becomes meaningful when children explain ideas in their own words. Every game is designed to encourage questions, listening and shared discovery.",
   },
   {
-    title: "Confidence before curriculum",
-    text: "A child who feels capable will chase knowledge on their own. Our difficulty curves protect the winning feeling.",
+    title: "Real life before rote learning",
+    text: "Familiar routines, nature and everyday situations help children connect new ideas to the world around them—not simply memorise answers.",
   },
   {
-    title: "Screens can wait",
-    text: "Childhood needs things to hold. Paper, weight, texture — learning that engages hands calms minds.",
+    title: "Progress before perfection",
+    text: "Children need achievable challenges, room to try again and reasons to feel proud. Growth matters more than getting everything right the first time.",
   },
   {
-    title: "Quality is respect",
-    text: "Thick board, rounded corners, inks that last. If it's going to live in your home, it should be made with care.",
+    title: "Quality shows care",
+    text: "Clear illustrations, durable lamination and child-safe rounded corners are not finishing touches. They reflect the care every child deserves.",
   },
 ];
 
@@ -54,13 +54,10 @@ export default function OurStoryPage() {
               Our story
             </p>
             <h1 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight md:text-[52px]">
-              We're working parents who refused to choose between career and
-              curiosity.
+              We created the learning games we wanted for our own children.
             </h1>
             <p className="mx-auto mt-6 max-w-xl text-[17px] leading-relaxed text-ink-soft">
-              Lernzeit began at a kitchen table, after bedtime, between two
-              exhausted parents and one question: why does helping your child
-              learn feel like a second job?
+              As working parents, we needed activities that were screen-free, easy to begin and meaningful enough to hold our children's attention.
             </p>
           </Reveal>
         </div>
@@ -72,25 +69,20 @@ export default function OurStoryPage() {
           <Reveal>
             <SectionHeading
               eyebrow="Why we do this"
-              title="The guilt gap is real. We've lived it."
+              title="We knew the kind of learning we wanted. We just couldn't find it."
             />
             <div className="mt-6 space-y-5 text-[16px] leading-relaxed text-ink-soft">
               <p>
-                We had the meetings, the commutes, the deadlines — and a
-                nagging feeling that the best hours of our children's day were
-                going to everyone but us. The learning apps promised help, but
-                handed our kids more screen time and handed us more guilt.
+                We wanted hands-on activities our children would genuinely enjoy—without another app, a stack of worksheets or a long setup.
               </p>
               <p>
-                The workbooks sat unopened because after a ten-hour day,
-                nobody has the energy to prepare a lesson. What we needed
-                didn't exist: something beautiful, ready in five seconds,
-                that made the little time we had <em>count</em>.
+                But most options asked for more time, more preparation or more screen use than our family could give. We needed something thoughtful enough to support real learning, yet simple enough to begin in the middle of an ordinary day.
+              </p>
+              <p>
+                So we started sketching, testing and refining our own card games at home. First for our children, then for other families looking for the same thing: meaningful learning that feels natural, playful and possible.
               </p>
               <p className="font-medium text-ink">
-                So we made it. First for our own kitchen table — then, when
-                other parents kept asking where our cards came from, for
-                yours.
+                That need became LernZeit Creations.
               </p>
             </div>
           </Reveal>
@@ -104,8 +96,8 @@ export default function OurStoryPage() {
                   }`}
                 >
                   <Image
-                    src={`/images/story/making-${i}.svg`}
-                    alt={`Behind the scenes of making Lernzeit cards, photo ${i}`}
+                    src={asset(`/images/story/making-${i}.svg`)}
+                    alt={`Behind the scenes of making LernZeit cards, photo ${i}`}
                     fill
                     sizes="(max-width: 768px) 45vw, 280px"
                     className="object-cover"
@@ -114,8 +106,32 @@ export default function OurStoryPage() {
               ))}
             </div>
             <p className="mt-4 text-center text-[13px] text-ink-soft">
-              Behind the scenes: sketching, wording, printing, and the
-              all-important family playtest.
+              Behind the scenes: sketching, testing and refining every LernZeit game.
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ——— Our Vision ——— */}
+      <section className="grain relative overflow-hidden bg-ink">
+        <div
+          className="pointer-events-none absolute inset-0"
+          aria-hidden
+          style={{
+            background:
+              "radial-gradient(480px 300px at 85% 10%, rgb(224 90 58 / 0.3) 0%, transparent 60%)",
+          }}
+        />
+        <div className="relative mx-auto max-w-4xl px-5 py-16 text-center md:px-8 md:py-24">
+          <Reveal>
+            <p className="font-display text-[15px] font-semibold italic text-accent">
+              Our vision
+            </p>
+            <h2 className="mt-4 text-3xl font-bold leading-tight tracking-tight text-paper md:text-[48px]">
+              To become India's go-to brand for lifelong learning.
+            </h2>
+            <p className="mx-auto mt-5 max-w-xl text-[17px] leading-relaxed text-paper/70">
+              Trusted by parents. Loved by children. Respected by educators.
             </p>
           </Reveal>
         </div>
@@ -134,8 +150,8 @@ export default function OurStoryPage() {
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {BELIEFS.map((b, i) => (
               <Reveal key={b.title} delay={(i % 3) * 0.08}>
-                <div className="h-full rounded-tile border border-line bg-card p-7 shadow-card">
-                  <span className="font-display text-3xl font-semibold italic text-accent">
+                <div className="w-full aspect-[1523/2293] rounded-tile border border-line bg-card p-7 shadow-card flex flex-col justify-start">
+                  <span className="font-display text-3xl font-semibold italic text-accent shrink-0">
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <h3 className="mt-3 text-lg font-bold tracking-tight">{b.title}</h3>
@@ -147,16 +163,16 @@ export default function OurStoryPage() {
             ))}
             {/* Gita quote fills the sixth cell */}
             <Reveal delay={0.24}>
-              <figure className="flex h-full flex-col justify-center rounded-tile bg-ink p-7 text-paper">
-                <blockquote className="font-display text-xl italic leading-relaxed">
-                  “In this world, there is nothing as purifying as knowledge.”
+              <figure className="w-full aspect-[1523/2293] flex flex-col justify-center rounded-tile bg-ink p-7 text-paper">
+                <blockquote className="font-display text-[16px] leading-relaxed">
+                  “न हि ज्ञानेन सदृशं पवित्रमिह विद्यते।<br />
+                  तत्स्वयं योगसंसिद्धः कालेनात्मनि विन्दति॥”
                 </blockquote>
                 <figcaption className="mt-4 text-[13px] font-medium uppercase tracking-wider text-paper/60">
                   Bhagavad Gita 4.38
                 </figcaption>
                 <p className="mt-3 text-[14px] leading-relaxed text-paper/70">
-                  A verse we return to often — the belief that facilitating
-                  learning is among the most meaningful things one can do.
+                  Meaning: Nothing is as purifying as true knowledge. With sincere and steady practice, it gradually reveals itself from within.
                 </p>
               </figure>
             </Reveal>
@@ -170,20 +186,22 @@ export default function OurStoryPage() {
           <Reveal>
             <SectionHeading
               eyebrow="What makes us different"
-              title="Built for the parent, not just the child"
+              title="Designed for the child. Thought through for the parent."
             />
             <p className="mt-5 text-[16px] leading-relaxed text-ink-soft">
-              Most learning products are designed for children and merely
-              purchased by parents. Ours are designed for both. The front of
-              every card belongs to your child; the back belongs to you —
-              prompts, games and encouragement written for someone who has
-              exactly ten minutes and wants them to matter.
+              Most flashcards give children something to look at. Ours create a complete learning moment.
+            </p>
+            <p className="mt-4 text-[16px] leading-relaxed text-ink-soft">
+              The front invites the child to observe, think, speak, sort or arrange. A simple flip reveals the answer, next step or guidance—so parents can support learning without preparing a lesson.
+            </p>
+            <p className="mt-4 text-[16px] leading-relaxed text-ink-soft">
+              Every game is built to be easy to begin, enjoyable to repeat and meaningful beyond the playtime itself.
             </p>
             <ul className="mt-6 space-y-3 text-[15px]">
               {[
-                "For working parents who want presence, not prep",
-                "For grandparents and caregivers who want a ready-made way in",
-                "For children aged 1–12, wherever they are on the journey",
+                "For parents who want purposeful learning without lesson planning",
+                "For children who learn best by seeing, speaking and doing",
+                "For homes and classrooms that need durable, reusable activities",
               ].map((t) => (
                 <li key={t} className="flex items-start gap-3">
                   <span className="mt-1.5 h-2 w-2 flex-none rounded-full bg-accent" aria-hidden />
@@ -195,7 +213,7 @@ export default function OurStoryPage() {
               href="/products"
               className="mt-8 inline-flex items-center gap-2 rounded-full bg-accent px-7 py-3.5 text-[15px] font-semibold text-white transition-colors hover:bg-accent-deep"
             >
-              See what we make <span aria-hidden>→</span>
+              See Our Flashcard Games <span aria-hidden>→</span>
             </Link>
           </Reveal>
 
@@ -206,10 +224,10 @@ export default function OurStoryPage() {
               </p>
               <ul className="mt-5 space-y-5">
                 {[
-                  ["Honest materials", "Cards that survive real childhood — or we make them better."],
-                  ["Honest claims", "No '10x your child's IQ' nonsense. Just well-designed practice, honestly described."],
-                  ["Honest listening", "Every review and message is read by a founder. Feedback has reshaped every product we sell."],
-                  ["A hand extended", "A share of every purchase funds flashcard sets for classrooms that can't afford learning materials."],
+                  ["1. Thoughtful by design", "Every game supports a clear learning need—not simply another way to keep children occupied."],
+                  ["2. Honest about outcomes", "No exaggerated claims or instant-learning promises. Just well-designed activities with clearly explained benefits."],
+                  ["3. Made for real use", "Durable lamination, rounded corners and child-friendly cards designed for repeated play."],
+                  ["4. Improved by listening", "Feedback from parents, teachers and children helps us refine every product we create."],
                 ].map(([t, d]) => (
                   <li key={t} className="flex gap-4">
                     <span
@@ -239,20 +257,20 @@ export default function OurStoryPage() {
             <SectionHeading
               align="center"
               eyebrow="Meet the makers"
-              title="A small family team with tiny chief testers"
+              title="Two parents, one shared purpose—and our most honest little testers."
             />
           </Reveal>
           <div className="mx-auto mt-12 grid max-w-4xl gap-5 sm:grid-cols-2">
             {[
               {
-                name: "Founder & Product",
+                name: "The ideas and learning",
                 emoji: "✏️",
-                bio: "Designs every card, obsesses over paper weight, and believes a rounded corner is a small act of kindness. (Real bio and photo coming soon.)",
+                bio: "Dreams up the games, writes the activities and keeps asking one question: will a child genuinely enjoy playing this?",
               },
               {
-                name: "Founder & Everything Else",
+                name: "The details and delivery",
                 emoji: "📦",
-                bio: "Runs the numbers, the logistics and the late-night packing sessions. Chief believer that learning tools should feel like gifts. (Real bio and photo coming soon.)",
+                bio: "Takes care of sourcing, production, quality and packaging—making sure every thoughtful idea becomes a product families can trust.",
               },
             ].map((f, i) => (
               <Reveal key={f.name} delay={i * 0.1}>
@@ -268,10 +286,7 @@ export default function OurStoryPage() {
           </div>
           <Reveal delay={0.2}>
             <p className="mx-auto mt-10 max-w-2xl text-center text-[15px] leading-relaxed text-ink-soft">
-              <strong className="text-ink">Growing with families.</strong> Every
-              set is playtested by real households before it ships — and
-              customer messages routinely turn into next year's products. If
-              your family has an idea, we're listening.
+              <strong className="text-ink">Growing alongside families.</strong> What children enjoy, what parents need and what educators observe continue to shape every game we create.
             </p>
           </Reveal>
         </div>
@@ -283,23 +298,15 @@ export default function OurStoryPage() {
           <Reveal>
             <SectionHeading
               eyebrow="Contact us"
-              title="Talk to a founder, not a ticket queue"
-              lede="Questions, feedback, wild product ideas — every message lands in our own inbox."
+              title="Questions, ideas or feedback? We&apos;re listening."
+              lede="Every message lands in our own inbox."
             />
-            <p className="mt-6 text-[15px] text-ink-soft">
-              Prefer email? Write to{" "}
-              <a href={`mailto:${site.contactEmail}`} className="font-semibold text-teal hover:text-teal-deep">
-                {site.contactEmail}
-              </a>
-            </p>
             <div className="mt-10 rounded-tile bg-gold-soft p-7">
               <p className="font-display text-lg italic leading-relaxed text-ink">
-                Thank you for trusting two parents you've never met with
-                something as precious as your child's curiosity. We don't take
-                it lightly — not for a single card.
+                Creating for children is a responsibility we never take lightly. Your trust keeps us thoughtful, honest and always learning.
               </p>
               <p className="mt-3 text-[14px] font-semibold text-ink-soft">
-                — The Lernzeit family
+                — The LernZeit Creations family
               </p>
             </div>
           </Reveal>

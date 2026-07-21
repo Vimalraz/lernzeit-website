@@ -22,13 +22,34 @@ export default function ContactForm({
     setStatus("sending");
     setError("");
     try {
-      const res = await fetch("/api/contact", {
+      const endpoint = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT || "/api/contact";
+      const isFormspree = endpoint.includes("formspree.io");
+      
+      const bodyData = isFormspree 
+        ? {
+            ...data,
+            _subject: kind === "bulk" ? "Bulk order request" : `LernZeit contact from ${data.name}`,
+          }
+        : { ...data, kind };
+
+      const res = await fetch(endpoint, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...data, kind }),
+        headers: { 
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: JSON.stringify(bodyData),
       });
-      const json = await res.json();
-      if (!res.ok) throw new Error(json.error ?? "Something went wrong.");
+      
+      if (!res.ok) {
+        let errMsg = "Something went wrong.";
+        try {
+          const json = await res.json();
+          errMsg = json.error ?? json.errors?.[0]?.message ?? errMsg;
+        } catch {}
+        throw new Error(errMsg);
+      }
+      
       setStatus("sent");
       form.reset();
     } catch (err) {
@@ -59,18 +80,20 @@ export default function ContactForm({
             required
             name="name"
             autoComplete="name"
+            placeholder={kind === "bulk" ? "Name" : "Your name"}
             className="mt-1.5 w-full rounded-2xl border border-line bg-card px-4 py-3 text-[15px] outline-none transition-colors focus:border-teal"
           />
         </label>
         <label className="block">
           <span className="text-[13px] font-semibold uppercase tracking-wider text-ink-soft">
-            Email
+            {kind === "bulk" ? "Email address" : "Email"}
           </span>
           <input
             required
             type="email"
             name="email"
             autoComplete="email"
+            placeholder={kind === "bulk" ? "Work email" : "Your email"}
             className="mt-1.5 w-full rounded-2xl border border-line bg-card px-4 py-3 text-[15px] outline-none transition-colors focus:border-teal"
           />
         </label>
@@ -78,11 +101,12 @@ export default function ContactForm({
       {kind === "bulk" && (
         <label className="block">
           <span className="text-[13px] font-semibold uppercase tracking-wider text-ink-soft">
-            School / organisation
+            School / Organisation
           </span>
           <input
             name="organisation"
             autoComplete="organization"
+            placeholder="School, centre or company name"
             className="mt-1.5 w-full rounded-2xl border border-line bg-card px-4 py-3 text-[15px] outline-none transition-colors focus:border-teal"
           />
         </label>

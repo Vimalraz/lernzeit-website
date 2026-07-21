@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "predeploy": "npm run build && echo > out/.nojekyll",
-    "deploy": "gh-pages -d out -b gh-pages"
+    "deploy": "gh-pages -t -d out -b gh-pages"
   },
   "dependencies": {
     "@next/third-parties": "^16.2.10",

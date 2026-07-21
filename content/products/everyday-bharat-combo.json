@@ -1,0 +1,30 @@
+{
+  "slug": "everyday-bharat-combo",
+  "title": "Everyday Bharat Objects — Levels 1 & 2 Combo Pack",
+  "tagline": "A gift-ready journey through Indian objects, language and stories.",
+  "description": "This two-level collection takes children from recognising familiar Indian objects to discovering the stories, traditions and values connected with them. It offers a richer vocabulary-building journey through culturally meaningful play.",
+  "benefits": [
+    "Builds vocabulary progressively across two levels",
+    "Develops cultural awareness, classification and storytelling",
+    "Encourages meaningful conversations across generations"
+  ],
+  "images": [
+    "/products/everyday-objects-combo-1.png",
+    "/products/everyday-objects-combo-2.png"
+  ],
+  "amazonUrl": "https://link.amazon/B09r1KMC5",
+  "age": { "min": 5, "max": 10, "label": "Best suited for ages 5–10" },
+  "learningNeeds": ["Build vocabulary & everyday awareness", "Tell stories & organise ideas", "Speak with confidence"],
+  "useCases": ["Gifting", "Parent–child time", "Classroom or small-group use"],
+  "difficulty": "Growing",
+  "badges": { "bestSeller": false, "newArrival": false, "mostGifted": true },
+  "comparison": { "cards": 80, "focus": "Build vocabulary and everyday awareness", "format": "Double-sided laminated cards with rounded corners" },
+  "bestFor": ["Gifting", "Parent–child time", "Classroom or small-group use"],
+  "themesIncluded": "All themes from Levels 1 and 2, including Indian homes, festivals, traditions, crafts, music, rituals, cultural symbols and values.",
+  "familyId": "everyday_objects",
+  "level": "combo",
+  "isCombo": true,
+  "adminPriority": 7,
+  "rating": 4.8,
+  "reviewCount": 18
+}

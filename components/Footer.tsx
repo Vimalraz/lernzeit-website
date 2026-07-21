@@ -12,9 +12,13 @@ export default function Footer() {
             <p className="mt-4 text-[15px] leading-relaxed text-ink-soft">
               {site.description}
             </p>
-            <p className="mt-5 inline-flex items-center gap-2 text-[13px] font-medium text-teal">
+            {/* Amazon trust line */}
+            <div className="mt-5 inline-flex items-center gap-2 text-[13px] font-medium text-teal">
               <LockIcon />
-              All purchases handled securely by Amazon
+              <span>All purchases handled securely by Amazon</span>
+            </div>
+            <p className="mt-4 text-[13px] font-medium text-ink-soft/60">
+              Crafted with ❤️ in Bharat
             </p>
           </div>
 
@@ -46,9 +50,10 @@ export default function Footer() {
                   href={site.amazonStoreUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[15px] text-ink hover:text-accent"
+                  className="inline-flex items-center gap-2 text-[15px] text-ink hover:text-accent"
                 >
-                  Lernzeit on Amazon ↗
+                  <AmazonIcon />
+                  LernZeit on Amazon ↗
                 </a>
               </li>
               <li>
@@ -56,17 +61,21 @@ export default function Footer() {
                   href={site.instagramUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[15px] text-ink hover:text-accent"
+                  className="inline-flex items-center gap-2 text-[15px] text-ink hover:text-accent"
                 >
+                  <InstagramIcon />
                   Instagram ↗
                 </a>
               </li>
               <li>
                 <a
-                  href={`mailto:${site.contactEmail}`}
-                  className="text-[15px] text-ink hover:text-accent"
+                  href={site.youtubeUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-[15px] text-ink hover:text-accent"
                 >
-                  {site.contactEmail}
+                  <YouTubeIcon />
+                  YouTube ↗
                 </a>
               </li>
               <li>
@@ -82,8 +91,8 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col gap-3 border-t border-line pt-6 text-[13px] text-ink-soft sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} Lernzeit. All rights reserved.</p>
-          <p>Made with care by parents, for parents.</p>
+          <p>© 2026 LernZeit Creations. All rights reserved.</p>
+          <p>Crafted with ❤️ in Bharat</p>
         </div>
       </div>
     </footer>
@@ -107,6 +116,52 @@ function LockIcon() {
         stroke="currentColor"
         strokeWidth="2"
       />
+    </svg>
+  );
+}
+
+function AmazonIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden>
+      <path
+        d="M6.5 17.5C10.5 20 15.5 20 19.5 17.5"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+      />
+      <path
+        d="M17.5 16.5l2.5 1.5-1.5 2"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M12 3C8.7 3 6 5.7 6 9c0 2.4 1.4 4.5 3.4 5.5L9 17h6l-.4-2.5C16.6 13.5 18 11.4 18 9c0-3.3-2.7-6-6-6z"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+function InstagramIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden>
+      <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" strokeWidth="1.8" />
+      <circle cx="12" cy="12" r="4.5" stroke="currentColor" strokeWidth="1.8" />
+      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+    </svg>
+  );
+}
+
+function YouTubeIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden>
+      <rect x="2" y="5" width="20" height="14" rx="4" stroke="currentColor" strokeWidth="1.8" />
+      <path d="M10 9l5 3-5 3V9z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" />
     </svg>
   );
 }

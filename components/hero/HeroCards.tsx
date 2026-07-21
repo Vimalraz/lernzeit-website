@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import Image from "next/image";
+import { asset } from "@/lib/site";
 
 type CardDef = {
   id: string;
@@ -13,14 +14,14 @@ type CardDef = {
 
 // 5 cards — all with proper front + back images now
 const CARDS: CardDef[] = [
-  { id: "c1", front: "/cards/1-front.jpg", back: "/cards/1-back.jpg", label: "Animals"  },
-  { id: "c2", front: "/cards/2-front.jpg", back: "/cards/2-back.jpg", label: "Numbers"  },
-  { id: "c3", front: "/cards/3-front.jpg", back: "/cards/3-back.jpg", label: "Alphabet" },
-  { id: "c4", front: "/cards/4-front.jpg", back: "/cards/4-back.jpg", label: "Colours"  },
-  { id: "c5", front: "/cards/5-front.jpg", back: "/cards/5-back.jpg", label: "Nature"   },
+  { id: "c1", front: "/cards/1-front.png", back: "/cards/1-back.jpg", label: "Animals"  },
+  { id: "c2", front: "/cards/2-front.png", back: "/cards/2-back.jpg", label: "Numbers"  },
+  { id: "c3", front: "/cards/3-front.png", back: "/cards/3-back.jpg", label: "Alphabet" },
+  { id: "c4", front: "/cards/4-front.png", back: "/cards/4-back.jpg", label: "Colours"  },
+  { id: "c5", front: "/cards/5-front.png", back: "/cards/5-back.jpg", label: "Nature"   },
 ];
 
-const CARD_W = 220;
+const CARD_W = 210;
 const CARD_H = 308;
 
 // Stack offsets — cards layer like a tidy physical deck, bottom-right to top-left
@@ -182,7 +183,7 @@ function CardFace({
         {/* ── Front ── */}
         <div className="backface-hidden absolute inset-0 overflow-hidden rounded-2xl shadow-lift ring-1 ring-black/8">
           <Image
-            src={card.front}
+            src={asset(card.front)}
             alt={`${card.label} flashcard front`}
             fill sizes="220px"
             className="object-cover"
@@ -210,7 +211,7 @@ function CardFace({
           style={{ transform: "rotateY(180deg)" }}
         >
           <Image
-            src={card.back}
+            src={asset(card.back)}
             alt={`${card.label} flashcard back`}
             fill sizes="220px"
             className="object-cover"

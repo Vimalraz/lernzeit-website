@@ -7,7 +7,7 @@ import Reveal from "@/components/ui/Reveal";
 import Stars from "@/components/ui/Stars";
 import { AmazonButton, GhostButton } from "@/components/ui/Buttons";
 import { getProduct, getProducts } from "@/lib/products";
-import { site } from "@/lib/site";
+import { site, asset } from "@/lib/site";
 
 type Params = { slug: string };
 
@@ -55,7 +55,7 @@ export default async function ProductDetailPage({
     name: product.title,
     description: product.description,
     image: product.images.map((i) => `${site.url}${i}`),
-    brand: { "@type": "Brand", name: "Lernzit" },
+    brand: { "@type": "Brand", name: "LernZeit" },
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: product.rating,
@@ -91,7 +91,7 @@ export default async function ProductDetailPage({
           <Reveal>
             <div className="relative aspect-[4/3] overflow-hidden rounded-tile border border-line bg-paper-deep">
               <Image
-                src={product.images[0]}
+                src={asset(product.images[0])}
                 alt={`${product.title} — main view`}
                 fill
                 priority
@@ -106,7 +106,7 @@ export default async function ProductDetailPage({
                   className="relative aspect-[4/3] overflow-hidden rounded-card border border-line bg-paper-deep"
                 >
                   <Image
-                    src={img}
+                    src={asset(img)}
                     alt={`${product.title} — view ${i + 2}`}
                     fill
                     sizes="(max-width: 1024px) 45vw, 270px"
@@ -173,12 +173,39 @@ export default async function ProductDetailPage({
               ))}
             </dl>
 
+            {/* Best For */}
+            {product.bestFor?.length > 0 && (
+              <div className="mt-5 rounded-card border border-line bg-card p-5 text-[14px]">
+                <dt className="font-semibold uppercase tracking-wider text-ink-soft">Best For</dt>
+                <dd className="mt-2 flex flex-wrap gap-2">
+                  {product.bestFor.map((bf) => (
+                    <span key={bf} className="rounded-full bg-paper-deep px-3 py-1 text-[13px] font-medium text-ink">
+                      {bf}
+                    </span>
+                  ))}
+                </dd>
+              </div>
+            )}
+
+            {/* Themes Included */}
+            {product.themesIncluded && (
+              <div className="mt-4 rounded-card border border-line bg-card p-5 text-[14px]">
+                <dt className="font-semibold uppercase tracking-wider text-ink-soft">Themes Included</dt>
+                <dd className="mt-1 text-[14px] leading-relaxed text-ink-soft">{product.themesIncluded}</dd>
+              </div>
+            )}
+
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <AmazonButton href={product.amazonUrl} size="lg" />
-              <GhostButton href="/products">Back to all sets</GhostButton>
+              <GhostButton href="/products">Back to All Games</GhostButton>
             </div>
+            {/* Amazon trust line */}
             <p className="mt-4 text-[13px] font-medium text-ink-soft">
-              🔒 Checkout, delivery and returns handled securely by Amazon.
+              🔒 Checkout, delivery and returns are handled securely by Amazon.
+            </p>
+            {/* Shared feature strip */}
+            <p className="mt-3 text-[12px] text-ink-soft/60">
+              6 Ways to Play · Flip and Check · Double-Sided Lamination · Child-Safe Rounded Corners
             </p>
           </Reveal>
         </div>

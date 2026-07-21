@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Email adapter for contact/bulk-enquiry forms.
  * Set FORMSPREE_ENDPOINT (https://formspree.io — free tier) to deliver messages;
  * without it, submissions are logged to the server console so local testing works.
@@ -15,14 +15,14 @@ export type ContactMessage = {
 export async function sendEmail(msg: ContactMessage): Promise<void> {
   const endpoint = process.env.FORMSPREE_ENDPOINT;
   if (!endpoint) {
-    console.log("[Lernzeit contact] (no FORMSPREE_ENDPOINT set — logging only)", msg);
+    console.log("[LernZeit contact] (no FORMSPREE_ENDPOINT set — logging only)", msg);
     return;
   }
   const res = await fetch(endpoint, {
     method: "POST",
     headers: { "Content-Type": "application/json", Accept: "application/json" },
     body: JSON.stringify({
-      subject: `Lernzeit ${msg.kind === "bulk" ? "bulk enquiry" : "contact"} from ${msg.name}`,
+      subject: msg.kind === "bulk" ? "Bulk order request" : `LernZeit contact from ${msg.name}`,
       ...msg,
     }),
   });

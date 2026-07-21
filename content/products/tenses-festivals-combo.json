@@ -1,0 +1,31 @@
+{
+  "slug": "tenses-festivals-combo",
+  "title": "Tenses Through Festivals — Levels 1 & 2 Combo Pack",
+  "tagline": "A complete, gift-ready journey through English tenses and Indian festivals.",
+  "description": "The Combo Pack brings together both progressive levels, helping children move from recognising basic tense changes to using more complex verbs and sentence structures. Familiar festival contexts keep grammar meaningful and memorable.",
+  "benefits": [
+    "Covers past, present and future tenses across two levels",
+    "Supports progressive sentence building and grammar practice",
+    "Combines English learning with Indian cultural awareness"
+  ],
+  "images": [
+    "/products/tenses-combo-1.png",
+    "/products/tenses-combo-2.png",
+    "/products/tenses-combo-3.png"
+  ],
+  "amazonUrl": "https://link.amazon/B0bK7MV4U",
+  "age": { "min": 5, "max": 10, "label": "Best suited for ages 5–10" },
+  "learningNeeds": ["Understand English tenses", "Speak with confidence", "Build vocabulary & everyday awareness"],
+  "useCases": ["Gifting", "Homework & revision", "Classroom or small-group use"],
+  "difficulty": "Growing",
+  "badges": { "bestSeller": false, "newArrival": false, "mostGifted": true },
+  "comparison": { "cards": 90, "focus": "Understand English tenses", "format": "Double-sided laminated cards with rounded corners" },
+  "bestFor": ["Gifting", "Homework and revision", "Classroom or small-group use"],
+  "themesIncluded": "All themes from Levels 1 and 2, including Indian festivals, action words, sentence formation, irregular verbs, rituals and traditions.",
+  "familyId": "tenses",
+  "level": "combo",
+  "isCombo": true,
+  "adminPriority": 10,
+  "rating": 4.8,
+  "reviewCount": 14
+}

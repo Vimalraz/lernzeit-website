@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import type { Post } from "@/lib/cms";
+import { asset } from "@/lib/site";
 
 function formatDate(iso: string) {
   return new Date(iso).toLocaleDateString("en-US", {
@@ -21,7 +22,7 @@ export default function BlogIndex({
   categories: string[];
 }) {
   const [category, setCategory] = useState<string | null>(null);
-  const visible = category ? posts.filter((p) => p.category === category) : posts;
+  const visible = category ? posts.filter((p) => p.categories.includes(category)) : posts;
 
   return (
     <div>
@@ -42,7 +43,7 @@ export default function BlogIndex({
               className="relative block aspect-[16/9] overflow-hidden rounded-tile border border-line bg-paper-deep"
             >
               <Image
-                src={post.coverImage}
+                src={asset(post.coverImage)}
                 alt=""
                 fill
                 sizes="(max-width: 640px) 92vw, 440px"

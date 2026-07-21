@@ -1,0 +1,31 @@
+{
+  "slug": "tenses-festivals-level-1",
+  "title": "Tenses Through Festivals — Level 1",
+  "tagline": "A playful first step into past, present and future tenses.",
+  "description": "Children learn how actions change across time through familiar Indian festival scenes. They observe the picture, build or complete a sentence and flip the card to check the tense and language guidance.",
+  "benefits": [
+    "Introduces past, present and future tenses in context",
+    "Builds sentence formation, vocabulary and speaking confidence",
+    "Connects early grammar learning with familiar Indian festivals"
+  ],
+  "images": [
+    "/products/tenses-l1-1.png",
+    "/products/tenses-l1-2.png",
+    "/products/tenses-l1-3.png"
+  ],
+  "amazonUrl": "https://link.amazon/B05ewcW4G",
+  "age": { "min": 4, "max": 6, "label": "Best suited for ages 4–6" },
+  "learningNeeds": ["Understand English tenses", "Speak with confidence", "Build vocabulary & everyday awareness"],
+  "useCases": ["Homework & revision", "Parent–child time", "Classroom or small-group use"],
+  "difficulty": "Beginner",
+  "badges": { "bestSeller": false, "newArrival": false, "mostGifted": false },
+  "comparison": { "cards": 45, "focus": "Understand English tenses", "format": "Double-sided laminated cards with rounded corners" },
+  "bestFor": ["Homework and revision", "Parent–child time", "Classroom or small-group use"],
+  "themesIncluded": "Past, present and future tenses, Indian festivals, action words, sentence formation, vocabulary and cultural awareness.",
+  "familyId": "tenses",
+  "level": "1",
+  "isCombo": false,
+  "adminPriority": 8,
+  "rating": 4.7,
+  "reviewCount": 33
+}

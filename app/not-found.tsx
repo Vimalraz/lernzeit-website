@@ -5,7 +5,7 @@ export default function NotFound() {
   return (
     <div className="mx-auto flex max-w-3xl flex-col items-center px-5 py-24 text-center">
       <Flashcard
-        className="h-56 w-44"
+        className="h-64 w-44"
         ariaLabel="404 card — flip me"
         front={
           <div className="flex h-full w-full flex-col items-center justify-center rounded-tile border border-line bg-card shadow-lift">

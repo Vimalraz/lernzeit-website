@@ -1,13 +1,15 @@
 import Link from "next/link";
+import Image from "next/image";
 import HeroCardArrange from "@/components/hero/HeroCardArrange";
 import ProductCard from "@/components/ProductCard";
 import ReviewCard from "@/components/ReviewCard";
+import Flashcard from "@/components/Flashcard";
 import Carousel from "@/components/ui/Carousel";
 import Reveal from "@/components/ui/Reveal";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Stars from "@/components/ui/Stars";
 import { getFeaturedProducts } from "@/lib/products";
-import { site } from "@/lib/site";
+import { site, asset } from "@/lib/site";
 import reviews from "@/content/reviews.json";
 
 export default function HomePage() {
@@ -35,14 +37,12 @@ export default function HomePage() {
             <Reveal>
               {/* Heading — big, bold, tight */}
               <h1 className="mx-auto text-[44px] font-extrabold leading-[1.05] tracking-[-0.03em] text-ink md:text-[60px] lg:text-[72px]">
-                Turn spare minutes into little victories.
+                Small moments. Meaningful learning.
               </h1>
 
               {/* Sub text */}
               <p className="mx-auto mt-6 max-w-xl text-[16px] leading-relaxed text-ink-soft md:text-[18px]">
-                Five minutes at breakfast. A card in the car. A ritual at
-                bedtime. Learning that fits real family life — designed for
-                working parents, loved by children.
+                Thoughtfully designed flashcard games for children aged 4–10. Easy to enjoy at breakfast, during travel or before bedtime.
               </p>
             </Reveal>
 
@@ -55,7 +55,7 @@ export default function HomePage() {
                   id="hero-cta-primary"
                   className="inline-flex items-center gap-2.5 rounded-full bg-ink px-7 py-3.5 text-[15px] font-semibold text-paper transition-all hover:bg-accent hover:shadow-lift active:scale-[0.97]"
                 >
-                  Explore flashcards
+                  Explore Our Flashcards
                   <span className="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden>
                       <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
@@ -75,12 +75,13 @@ export default function HomePage() {
                 </a>
               </div>
 
-              {/* Social proof */}
-              <div className="mt-5 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-[13px] font-medium text-ink-soft">
-                <Stars rating={4.8} />
-                <span>2,700+ Amazon reviews</span>
-                <span className="hidden sm:inline">·</span>
-                <span className="hidden sm:inline">Sold &amp; delivered by Amazon</span>
+              {/* Trust strip */}
+              <div className="mt-5 flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-[13px] font-medium text-ink-soft/75">
+                <span>Created by parents</span>
+                <span>·</span>
+                <span>Designed for screen-free learning</span>
+                <span>·</span>
+                <span>Made entirely in India</span>
               </div>
             </Reveal>
           </div>
@@ -96,17 +97,53 @@ export default function HomePage() {
         {/* ——— Bottom brand marquee strip ——— */}
         <div className="relative border-t border-line/60 bg-white/30 backdrop-blur-sm py-5 overflow-hidden">
           <p className="mb-3 text-center text-[11px] font-semibold uppercase tracking-widest text-ink-soft/60">
-            Trusted by families worldwide
+            Trusted by Indian Parents & Teachers
           </p>
-          <div className="flex items-center gap-12 animate-marquee whitespace-nowrap px-8">
-            {["Montessori Inspired", "Screen-Free Play", "Award Winning", "Eco-Friendly Cards", "Ages 1–12", "2,700+ Reviews", "Montessori Inspired", "Screen-Free Play", "Award Winning", "Eco-Friendly Cards", "Ages 1–12", "2,700+ Reviews"].map((t, i) => (
-              <span key={i} className="inline-flex items-center gap-2 text-[14px] font-medium text-ink-soft/60">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden className="text-ink-soft/40">
-                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
-                </svg>
-                {t}
-              </span>
-            ))}
+          <div className="flex select-none overflow-hidden w-full">
+            {/* First container */}
+            <div className="flex shrink-0 items-center gap-12 animate-marquee whitespace-nowrap">
+              {[
+                "Ages 4–10",
+                "Montessori-Inspired",
+                "Screen-Free Play",
+                "Double-Sided Lamination",
+                "Child-Safe Rounded Corners",
+                "6 Ways to Play",
+                "Real-Life Learning Themes",
+                "Durable for Everyday Use",
+                "Easy for Parents to Use",
+                "Classroom-Friendly Activities",
+              ].map((t, i) => (
+                <span key={i} className="inline-flex items-center gap-2 text-[14px] font-medium text-ink-soft/60 pr-12">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden className="text-ink-soft/40">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
+                  </svg>
+                  {t}
+                </span>
+              ))}
+            </div>
+            {/* Second container for seamless looping */}
+            <div className="flex shrink-0 items-center gap-12 animate-marquee whitespace-nowrap" aria-hidden="true">
+              {[
+                "Ages 4–10",
+                "Montessori-Inspired",
+                "Screen-Free Play",
+                "Double-Sided Lamination",
+                "Child-Safe Rounded Corners",
+                "6 Ways to Play",
+                "Real-Life Learning Themes",
+                "Durable for Everyday Use",
+                "Easy for Parents to Use",
+                "Classroom-Friendly Activities",
+              ].map((t, i) => (
+                <span key={`dup-${i}`} className="inline-flex items-center gap-2 text-[14px] font-medium text-ink-soft/60 pr-12">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden className="text-ink-soft/40">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
+                  </svg>
+                  {t}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -116,15 +153,15 @@ export default function HomePage() {
         <Reveal>
           <SectionHeading
             eyebrow="For parents"
-            title="You don't need more time. You need better minutes."
-            lede="Every Lernzeit card is built so the busiest parent can open the box and begin — no prep, no printouts, no guilt."
+            title="A few minutes with you can shape how they think, speak and grow."
+            lede="Our ready-to-play flashcard games turn everyday time together into meaningful conversations, joyful learning and stronger parent-child connection."
           />
         </Reveal>
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {PARENT_BENEFITS.map((b, i) => (
             <Reveal key={b.title} delay={i * 0.1}>
-              <div className="h-full rounded-tile border border-line bg-card p-7 shadow-card">
-                <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-accent-soft text-accent">
+              <div className="w-full aspect-[1523/2293] rounded-tile border border-line bg-card p-7 shadow-card flex flex-col justify-start">
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-accent-soft text-accent">
                   {b.icon}
                 </span>
                 <h3 className="mt-5 text-lg font-bold tracking-tight">{b.title}</h3>
@@ -143,15 +180,15 @@ export default function HomePage() {
           <Reveal>
             <SectionHeading
               eyebrow="For children"
-              title="It never feels like studying. That's the point."
-              lede="Games, riddles and small wins — the kind of practice children ask for again tomorrow."
+              title="When learning feels like play, children stop holding back."
+              lede="Each game gives children a safe, playful way to think aloud, try again and discover what they can do – at their own pace."
             />
           </Reveal>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {CHILD_BENEFITS.map((b, i) => (
               <Reveal key={b.title} delay={i * 0.1}>
-                <div className="h-full rounded-tile bg-card p-7 shadow-card">
-                  <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-teal-soft text-teal">
+                <div className="w-full aspect-[1523/2293] rounded-tile bg-card p-7 shadow-card flex flex-col justify-start">
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-teal-soft text-teal">
                     {b.icon}
                   </span>
                   <h3 className="mt-5 text-lg font-bold tracking-tight">{b.title}</h3>
@@ -201,8 +238,8 @@ export default function HomePage() {
           <Reveal>
             <SectionHeading
               align="center"
-              eyebrow="From Amazon reviews"
-              title="Trusted by thousands of families"
+              eyebrow="Trusted by Indian families"
+              title="What parents are saying"
               lede="Real feedback from verified Amazon purchases."
             />
           </Reveal>
@@ -232,22 +269,55 @@ export default function HomePage() {
           <SectionHeading
             align="center"
             eyebrow="How it works"
-            title="How learning happens, three steps at a time"
+            title="Pick. Play. Flip to check."
           />
         </Reveal>
         <div className="mt-14 grid gap-10 md:grid-cols-3 md:gap-6">
           {STEPS.map((s, i) => (
             <Reveal key={s.title} delay={i * 0.12}>
               <div className="flex flex-col items-center text-center">
-                <div
-                  className="flex h-28 w-24 items-center justify-center rounded-2xl text-4xl font-bold text-white shadow-lift"
-                  style={{
-                    backgroundColor: s.color,
-                    transform: `rotate(${[-4, 3, -2][i]}deg)`,
-                  }}
-                >
-                  {i + 1}
-                </div>
+                {i === 2 ? (
+                  <Flashcard
+                    front={
+                      <div className="relative h-28 w-24 overflow-hidden rounded-2xl shadow-lift bg-paper-deep flex items-center justify-center border border-line">
+                        <Image
+                          src={asset("/hero/slide1.png")}
+                          alt="Front card image"
+                          fill
+                          sizes="96px"
+                          className="object-cover"
+                          draggable={false}
+                        />
+                        <span className="absolute bottom-2 right-2 flex h-6 w-6 items-center justify-center rounded-full bg-white/80 shadow-card text-ink text-[12px] font-bold">
+                          3
+                        </span>
+                      </div>
+                    }
+                    back={
+                      <div className="relative h-28 w-24 overflow-hidden rounded-2xl shadow-lift bg-paper-deep flex items-center justify-center border border-line">
+                        <Image
+                          src={asset("/hero/slide2.png")}
+                          alt="Back card image"
+                          fill
+                          sizes="96px"
+                          className="object-cover"
+                          draggable={false}
+                        />
+                      </div>
+                    }
+                    className="h-28 w-24 cursor-pointer"
+                  />
+                ) : (
+                  <div
+                    className="flex h-28 w-24 items-center justify-center rounded-2xl text-4xl font-bold text-white shadow-lift"
+                    style={{
+                      backgroundColor: s.color,
+                      transform: `rotate(${[-4, 3, -2][i]}deg)`,
+                    }}
+                  >
+                    {i + 1}
+                  </div>
+                )}
                 <h3 className="mt-6 text-lg font-bold tracking-tight">{s.title}</h3>
                 <p className="mt-2 max-w-xs text-[15px] leading-relaxed text-ink-soft">
                   {s.text}
@@ -271,17 +341,17 @@ export default function HomePage() {
               }}
             />
             <h2 className="relative mx-auto max-w-2xl text-3xl font-bold tracking-tight text-paper md:text-4xl">
-              Tonight's ten minutes could be the ones they remember.
+              Find the right game for the way your child learns.
             </h2>
             <p className="relative mx-auto mt-4 max-w-lg text-[16px] text-paper/70">
-              Find the right set for your child and shop securely on Amazon.
+              Explore flashcard games by age, skill and interest, then shop easily on Amazon.
             </p>
             <div className="relative mt-8 flex flex-wrap justify-center gap-4">
               <Link
-                href="/products"
+                href="/products#product-picker"
                 className="rounded-full bg-paper px-8 py-4 text-[16px] font-semibold text-ink transition-all hover:bg-accent hover:text-white"
               >
-                Find their set
+                Find Their Game
               </Link>
               <a
                 href={site.amazonStoreUrl}
@@ -301,54 +371,54 @@ export default function HomePage() {
 
 const PARENT_BENEFITS = [
   {
-    title: "Zero-prep, by design",
-    text: "The back of every card tells you exactly what to ask and how to play. Open the box, start the moment — even after your longest workday.",
+    title: "Be present, not prepared",
+    text: "No prep. No printouts. No guilt. Just pick a card, start a conversation and enjoy learning together.",
     icon: <Glyph d="M12 8v4l3 3M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z" />,
   },
   {
-    title: "Fits the gaps in your day",
-    text: "Breakfast, the school run, the doctor's waiting room. Sessions are built for five to ten minutes — consistency beats marathon weekends.",
+    title: "Make learning feel like bonding",
+    text: "Every activity creates space to listen, laugh and discover how your child sees the world.",
     icon: <Glyph d="M8 7V3m8 4V3M4 11h16M5 5h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z" />,
   },
   {
-    title: "Progress you can actually see",
-    text: "Levels, sorting systems and 'mastered' piles show growth without tests — so you always know it's working.",
+    title: "Watch their confidence grow",
+    text: "As children arrange ideas, tell stories and find their own answers, they learn to express themselves with greater confidence.",
     icon: <Glyph d="M4 20V10m6 10V4m6 16v-7m4 7H2" />,
   },
 ];
 
 const CHILD_BENEFITS = [
   {
-    title: "Feels like a game",
-    text: "Riddles, tongue-twisters and mini challenges hide the repetition that makes knowledge stick.",
+    title: "No fear of getting it wrong",
+    text: "Open-ended activities help children try, rethink and keep going without the pressure of tests or worksheets.",
     icon: <Glyph d="M14.5 4.5 18 8l-9.5 9.5a2.5 2.5 0 0 1-3.5-3.5L14.5 4.5zM13 6l5 5M16 19h6m-3-3v6" />,
   },
   {
-    title: "Confidence, card by card",
-    text: "Each card is one small, winnable step. Small wins stack into the 'I can do this' feeling that changes everything.",
+    title: "Put their thoughts into words",
+    text: "Storytelling, sequencing and question games help children organise their ideas and express what they mean.",
     icon: <Glyph d="M12 3l2.7 5.5 6 .9-4.3 4.2 1 6L12 16.8 6.6 19.6l1-6L3.3 9.4l6-.9L12 3z" />,
   },
   {
-    title: "Wonder, without a screen",
-    text: "Something to hold, flip, sort and carry around. Tactile learning that calms instead of overstimulates.",
+    title: "Hands busy. Mind engaged.",
+    text: "Sorting, arranging, matching and flipping cards keeps learning active, focused and away from passive screen time.",
     icon: <Glyph d="M7 4h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm5 12h.01" />,
   },
 ];
 
 const STEPS = [
   {
-    title: "Pick a moment",
-    text: "Any ten spare minutes work — breakfast table, back seat, bath-time wind-down.",
+    title: "Pick a card",
+    text: "Choose an activity and follow the simple prompt. No extra materials or lengthy instructions needed.",
     color: "var(--teal)",
   },
   {
-    title: "Flip and play",
-    text: "Your child flips the card; the back guides the game. You're the co-player, not the teacher.",
+    title: "Let them work it out",
+    text: "Your child observes, thinks, speaks, sorts or arranges—depending on the game—before seeing the answer.",
     color: "var(--accent)",
   },
   {
-    title: "Watch it stick",
-    text: "Little-and-often repetition moves knowledge into long-term memory — and cards into the proud 'mastered' pile.",
+    title: "Flip and check",
+    text: "Turn the card over to reveal the answer or guidance. The check is built into every card, giving children instant feedback and the confidence to try again.",
     color: "var(--gold)",
   },
 ];

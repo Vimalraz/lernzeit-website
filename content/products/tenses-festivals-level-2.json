@@ -1,0 +1,31 @@
+{
+  "slug": "tenses-festivals-level-2",
+  "title": "Tenses Through Festivals — Level 2",
+  "tagline": "More challenging verbs and festival contexts for growing grammar skills.",
+  "description": "Children practise using past, present and future forms with more complex actions, irregular verbs and multi-step festival situations. The flip-and-check format provides immediate language guidance after every attempt.",
+  "benefits": [
+    "Strengthens tense usage through meaningful sentence practice",
+    "Introduces more complex and irregular verb forms",
+    "Builds grammar confidence through culturally familiar situations"
+  ],
+  "images": [
+    "/products/tenses-l2-1.png",
+    "/products/tenses-l2-2.png",
+    "/products/tenses-l2-3.png"
+  ],
+  "amazonUrl": "https://link.amazon/B0htLXRhY",
+  "age": { "min": 7, "max": 10, "label": "Best suited for ages 7–10" },
+  "learningNeeds": ["Understand English tenses", "Speak with confidence", "Build vocabulary & everyday awareness"],
+  "useCases": ["Homework & revision", "Classroom or small-group use", "Parent–child time"],
+  "difficulty": "Growing",
+  "badges": { "bestSeller": false, "newArrival": true, "mostGifted": false },
+  "comparison": { "cards": 45, "focus": "Understand English tenses", "format": "Double-sided laminated cards with rounded corners" },
+  "bestFor": ["Homework and revision", "Classroom or small-group use", "Parent–child time"],
+  "themesIncluded": "Past, present and future tenses, Indian festivals, irregular and multi-step verbs, rituals, traditions and expressions of devotion.",
+  "familyId": "tenses",
+  "level": "2",
+  "isCombo": false,
+  "adminPriority": 9,
+  "rating": 4.6,
+  "reviewCount": 19
+}

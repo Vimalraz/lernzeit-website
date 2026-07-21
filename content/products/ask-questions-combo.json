@@ -1,0 +1,31 @@
+{
+  "slug": "ask-questions-combo",
+  "title": "Learn to Ask Questions — Levels 1 & 2 Combo Pack",
+  "tagline": "A complete journey from first questions to confident conversations.",
+  "description": "This gift-ready Combo Pack brings together both progressive levels. Children begin with familiar everyday situations and gradually move towards deeper questions involving problem-solving, values and the world around them.",
+  "benefits": [
+    "Offers progressive question-building across two levels",
+    "Strengthens observation, comprehension and communication",
+    "Encourages curiosity, empathy and confident self-expression"
+  ],
+  "images": [
+    "/products/ask-questions-combo-1.png",
+    "/products/ask-questions-combo-2.png",
+    "/products/ask-questions-combo-3.png"
+  ],
+  "amazonUrl": "https://link.amazon/B05EX4tCP",
+  "age": { "min": 5, "max": 10, "label": "Best suited for ages 5–10" },
+  "learningNeeds": ["Ask better questions", "Speak with confidence", "Strengthen logic & sequencing"],
+  "useCases": ["Gifting", "Parent–child time", "Classroom or small-group use"],
+  "difficulty": "Growing",
+  "badges": { "bestSeller": false, "newArrival": false, "mostGifted": true },
+  "comparison": { "cards": 80, "focus": "Ask better questions and speak with confidence", "format": "Double-sided laminated cards with rounded corners" },
+  "bestFor": ["Gifting", "Parent–child time", "Classroom or small-group use"],
+  "themesIncluded": "All themes from Levels 1 and 2, including family, school, feelings, safety, nature, community, healthy habits, festivals, problem-solving and values.",
+  "familyId": "question_quest",
+  "level": "combo",
+  "isCombo": true,
+  "adminPriority": 4,
+  "rating": 4.9,
+  "reviewCount": 29
+}

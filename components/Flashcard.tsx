@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -15,7 +15,7 @@ type FlashcardProps = {
 };
 
 /**
- * The Lernzeit signature object: a 3D-flippable card.
+ * The LernZeit signature object: a 3D-flippable card.
  * Click / Enter / Space flips it. Wrap in motion.div for drag behaviors.
  */
 export default function Flashcard({

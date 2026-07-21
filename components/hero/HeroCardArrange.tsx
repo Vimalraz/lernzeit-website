@@ -9,6 +9,7 @@ import {
   type PanInfo,
 } from "framer-motion";
 import Image from "next/image";
+import { asset } from "@/lib/site";
 
 /* ────────────────────────────────────────────────────────────────
    Cardy-style draggable flashcards, reimagined as a tiny game:
@@ -28,15 +29,15 @@ type CardDef = { id: string; front: string; back: string; label: string };
 
 // Card index i must land in slot i to be "in order".
 const CARDS: CardDef[] = [
-  { id: "c1", front: "/cards/1-front.jpg", back: "/cards/1-back.jpg", label: "1 · Animals" },
-  { id: "c2", front: "/cards/2-front.jpg", back: "/cards/2-back.jpg", label: "2 · Numbers" },
-  { id: "c3", front: "/cards/3-front.jpg", back: "/cards/3-back.jpg", label: "3 · Alphabet" },
-  { id: "c4", front: "/cards/4-front.jpg", back: "/cards/4-back.jpg", label: "4 · Colours" },
-  { id: "c5", front: "/cards/5-front.jpg", back: "/cards/5-back.jpg", label: "5 · Nature" },
+  { id: "c1", front: "/hero/slide1.png", back: "/hero/slide2.png", label: "1 · Story Cards" },
+  { id: "c2", front: "/hero/slide3.png", back: "/hero/slide4.png", label: "2 · Question Quest" },
+  { id: "c3", front: "/hero/slide5.png", back: "/hero/slide6.png", label: "3 · Tenses" },
+  { id: "c4", front: "/hero/slide7.png", back: "/hero/slide8.png", label: "4 · Everyday Objects" },
+  { id: "c5", front: "/hero/slide9.png", back: "/hero/slide10.png", label: "5 · Festivals" },
 ];
 
 const CARD_W = 166;
-const CARD_H = 232;
+const CARD_H = 244;
 const GAP = 20;
 const SLOT_STEP = CARD_W + GAP; // horizontal distance between slot centres
 const SNAP_DIST = 130; // how close a drop must be (design units) to grab a slot
@@ -44,10 +45,10 @@ const SNAP_DIST = 130; // how close a drop must be (design units) to grab a slot
 // Y is measured from the arena TOP (x still from the horizontal centre). The
 // slot row lives near the top; loose cards scatter below it. Because the origin
 // is the top edge, we can shrink the arena's height without shifting any card.
-const ROW_CY = 118; // slot-row card-centre, from arena top
+const ROW_CY = 124; // slot-row card-centre, from arena top
 const STAGE_W = 940;
-const STAGE_H = 348; // height while cards are still scattered
-const STAGE_H_TIDY = 288; // collapsed height once every slot is filled
+const STAGE_H = 360; // height while cards are still scattered
+const STAGE_H_TIDY = 300; // collapsed height once every slot is filled
 const K_MAX = 1;
 const K_MIN = 0.34;
 
@@ -408,7 +409,7 @@ function Face({
         }`}
       />
       <div className="relative h-full w-full overflow-hidden rounded-2xl ring-1 ring-black/10">
-        <Image src={src} alt={alt} fill sizes="180px" className="object-cover" draggable={false} />
+        <Image src={asset(src)} alt={alt} fill sizes="180px" className="object-cover" draggable={false} />
         {/* The back face's net rotation is identity (card 180° × face 180°), so
             its content is upright — no mirroring needed on either face. */}
         <FlipButton onFlip={onFlip} />
@@ -432,11 +433,11 @@ function FlipButton({ onFlip }: { onFlip: () => void }) {
       }}
       className="absolute bottom-2.5 right-2.5 z-20 flex h-9 w-9 items-center justify-center rounded-full bg-black/45 backdrop-blur-sm transition-transform hover:scale-110 active:scale-95"
     >
-      <span className="block h-[18px] w-[14px]" style={{ perspective: 240 }}>
+      <span className="block h-[19px] w-[13px]" style={{ perspective: 240 }}>
         <span className="relative block h-full w-full [transform-style:preserve-3d] group-hover:[animation:icon-flip_0.7s_ease-in-out]">
           {/* front face of the mini card */}
           <span className="absolute inset-0 flex items-end justify-center rounded-[3px] bg-white pb-[3px] [backface-visibility:hidden]">
-            <span className="h-[2px] w-[8px] rounded-full bg-ink/45" />
+            <span className="h-[2px] w-[7px] rounded-full bg-ink/45" />
           </span>
           {/* back face of the mini card */}
           <span

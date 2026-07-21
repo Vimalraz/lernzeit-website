@@ -4,7 +4,22 @@
       "WebFetch(domain:www.framer.com)",
       "mcp__plugin_playwright_playwright__browser_navigate",
       "mcp__plugin_playwright_playwright__browser_resize",
-      "mcp__plugin_playwright_playwright__browser_drag"
+      "mcp__plugin_playwright_playwright__browser_drag",
+      "Bash(mkdir -p \"/tmp/claude/docx_review\")",
+      "Bash(mkdir -p __TRACKED_VAR__/docx_review)",
+      "Bash(cp 'D:/Work + Files/00_Graphic design/17_Renga/v1/lernzit website/Content from ranga/Website Content.docx' __TRACKED_VAR__/docx_review/)",
+      "Bash(where soffice.exe)",
+      "Read(//c/Program Files/LibreOffice/program//**)",
+      "Bash(\"/c/Program Files/LibreOffice/program/soffice.exe\" --headless --convert-to pdf \"Website Content.docx\")",
+      "Bash(pdfinfo \"Website Content.pdf\")",
+      "Bash(pdftoppm -jpeg -r 100 \"Website Content.pdf\" page)",
+      "Bash(python -c \"import fitz; print\\('pymupdf ok'\\)\")",
+      "Bash(python -c \"import pypdfium2; print\\('pypdfium2 ok'\\)\")",
+      "Bash(where pdftoppm.exe)",
+      "Bash(where magick.exe)",
+      "Bash(pip list *)",
+      "Bash(pip install *)",
+      "Bash(python -c ' *)"
     ]
   }
 }

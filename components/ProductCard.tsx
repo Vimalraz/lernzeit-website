@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { Product } from "@/lib/products";
 import { AmazonButton } from "@/components/ui/Buttons";
 import Stars from "@/components/ui/Stars";
+import { asset } from "@/lib/site";
 
 export default function ProductCard({
   product,
@@ -28,7 +29,7 @@ export default function ProductCard({
         className="relative block aspect-[4/3] overflow-hidden bg-paper-deep"
       >
         <Image
-          src={product.images[0]}
+          src={asset(product.images[0])}
           alt={product.title}
           fill
           sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 340px"

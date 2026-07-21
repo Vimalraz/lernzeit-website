@@ -1,0 +1,31 @@
+{
+  "slug": "storytelling-sequencing",
+  "title": "Storytelling & Sequencing Flashcards",
+  "tagline": "Five-card stories that help children put ideas in order.",
+  "description": "Children arrange picture cards into meaningful sequences, narrate what happened and imagine what could happen next. Familiar daily-life and nature themes make storytelling easier to understand, while the flip-and-check format provides helpful guidance.",
+  "benefits": [
+    "Helps children tell stories and organise ideas clearly",
+    "Strengthens logical thinking, sequencing and prediction",
+    "Builds vocabulary, comprehension and empathy through visual stories"
+  ],
+  "images": [
+    "/products/storytelling-1.png",
+    "/products/storytelling-2.png",
+    "/products/storytelling-3.png"
+  ],
+  "amazonUrl": "https://link.amazon/B0i9MIngd",
+  "age": { "min": 4, "max": 8, "label": "Best suited for ages 4–8" },
+  "learningNeeds": ["Tell stories & organise ideas", "Strengthen logic & sequencing", "Speak with confidence"],
+  "useCases": ["Quick 5–10 minute play", "Parent–child time", "Travel & waiting time", "Classroom or small-group use"],
+  "difficulty": "Beginner",
+  "badges": { "bestSeller": true, "newArrival": false, "mostGifted": false },
+  "comparison": { "cards": 40, "focus": "Tell stories and organise ideas", "format": "Double-sided laminated cards with rounded corners" },
+  "bestFor": ["Quick 5–10 minute play", "Parent–child time", "Travel and waiting time", "Classroom or small-group use"],
+  "themesIncluded": "Daily routines, hygiene, creativity, responsibility, food chains and plant and animal life cycles.",
+  "familyId": "storytelling",
+  "level": "none",
+  "isCombo": false,
+  "adminPriority": 1,
+  "rating": 4.8,
+  "reviewCount": 47
+}

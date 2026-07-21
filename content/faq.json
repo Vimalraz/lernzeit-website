@@ -1,26 +1,34 @@
 [
   {
-    "q": "What ages are Lernzeit flashcards for?",
-    "a": "Our range covers ages 1–12. Every product page shows a clear age band, and the Learning Goal Picker above can match a set to your child in under a minute. When in doubt, choose the younger band — confidence first, challenge second."
+    "q": "What ages are LernZeit flashcard games designed for?",
+    "a": "Our collection is designed for children aged 4–10. Each game has its own recommended age and skill level, so you can choose what best suits your child’s current stage."
   },
   {
-    "q": "How much time do I need as a parent?",
-    "a": "Five to ten minutes. Every card carries a prompt on the back that tells you exactly what to ask, so there is zero preparation. Many families keep a set in the car or by the dinner table and use spare moments."
+    "q": "How do I choose the right game or level for my child?",
+    "a": "Start with the skill you would like to support—such as storytelling, asking questions, vocabulary or English tenses. Choose Level 1 for beginners, Level 2 for children ready for more challenge, or use our product picker for a personalised recommendation."
   },
   {
-    "q": "Where can I buy Lernzeit products?",
-    "a": "All our products are sold exclusively on Amazon, with Prime delivery and Amazon's standard returns. Every 'Buy on Amazon' button on this site takes you straight to the official Lernzeit listing."
+    "q": "How much time and preparation do these games need?",
+    "a": "Most activities can be played in just 5–10 minutes. The games are ready to use, with simple prompts and guidance built into the cards—no worksheets or lesson planning required."
   },
   {
-    "q": "Are the cards durable enough for toddlers?",
-    "a": "Yes — cards for ages 1–4 are printed on extra-thick board with rounded corners and a wipe-clean laminate. They are designed to survive juice, jam, backpacks and the occasional chew."
+    "q": "Can children use the cards independently?",
+    "a": "Many children can sort, arrange, observe and flip the cards on their own. Younger children may benefit from playing with a parent, while older children can gradually explore more independently."
   },
   {
-    "q": "Do you offer discounts for schools or bulk orders?",
-    "a": "We do. Schools, nurseries, tuition centres and corporate gifting teams can write to us using the bulk enquiry form above — we'll reply within two working days with options."
+    "q": "How are LernZeit games different from regular flashcards?",
+    "a": "They go beyond memorising facts. Children observe, think, speak, arrange, question and solve—then flip the card to check or continue the activity. Each set also includes multiple ways to play."
   },
   {
-    "q": "What if a set doesn't suit my child?",
-    "a": "Purchases are covered by Amazon's return policy, no questions asked. And if you tell us why it didn't fit, we read every message — customer feedback has shaped every product we've made."
+    "q": "Are the cards made for repeated use?",
+    "a": "Yes. The cards have double-sided lamination and child-safe rounded corners, making them suitable for regular use at home, during travel or in learning spaces."
+  },
+  {
+    "q": "Can LernZeit games be used in classrooms or small groups?",
+    "a": "Yes. Educators can use them for warm-ups, learning centres, guided discussions, group activities or individual practice. The open-ended formats allow activities to be adapted for different learners."
+  },
+  {
+    "q": "Can language-development therapists use these cards in sessions?",
+    "a": "The cards can be used as supplementary prompts for vocabulary, sequencing, question formation, storytelling and expressive language. They are educational resources—not diagnostic or therapeutic tools—and should be used according to the professional’s judgement."
   }
 ]

@@ -1,20 +1,21 @@
 import Link from "next/link";
 import Image from "next/image";
+import { asset } from "@/lib/site";
 
-/** Lernzeit black logo — uses the official SVG asset from /public */
+/** LernZeit logo — uses the official PNG asset from /public */
 export default function Logo({ className = "" }: { className?: string }) {
   return (
     <Link
       href="/"
       className={`inline-flex items-center ${className}`}
-      aria-label="Lernzeit — home"
+      aria-label="LernZeit — home"
     >
       <Image
-        src="/lernzit-logo-black.svg"
-        alt="Lernzeit"
-        width={110}
-        height={48}
-        className="h-9 w-auto"
+        src={asset("/lernzit-logo-black.svg")}
+        alt="LernZeit"
+        width={220}
+        height={95}
+        className="h-11 w-auto sm:h-12"
         priority
       />
     </Link>

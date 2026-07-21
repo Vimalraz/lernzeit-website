@@ -1,0 +1,31 @@
+{
+  "slug": "everyday-bharat-level-1",
+  "title": "Everyday Bharat Objects — Level 1",
+  "tagline": "Familiar Indian objects that make first vocabulary feel close to home.",
+  "description": "Children discover objects they see in Indian homes and everyday life through pictures, stories and conversation. They identify, describe and connect each object to familiar experiences before flipping the card to learn more.",
+  "benefits": [
+    "Builds vocabulary using culturally relevant objects",
+    "Develops identification, description and classification skills",
+    "Connects language learning with everyday Indian life"
+  ],
+  "images": [
+    "/products/everyday-objects-l1-1.png",
+    "/products/everyday-objects-l1-2.png",
+    "/products/everyday-objects-l1-3.png"
+  ],
+  "amazonUrl": "https://link.amazon/B01pr56rG",
+  "age": { "min": 4, "max": 5, "label": "Best suited for ages 4–5" },
+  "learningNeeds": ["Build vocabulary & everyday awareness", "Tell stories & organise ideas", "Speak with confidence"],
+  "useCases": ["Quick 5–10 minute play", "Parent–child time", "Travel & waiting time"],
+  "difficulty": "Beginner",
+  "badges": { "bestSeller": false, "newArrival": false, "mostGifted": false },
+  "comparison": { "cards": 40, "focus": "Build vocabulary and everyday awareness", "format": "Double-sided laminated cards with rounded corners" },
+  "bestFor": ["Quick 5–10 minute play", "Parent–child time", "Travel and waiting time"],
+  "themesIncluded": "Indian household objects, festivals, traditions, values, vocabulary and storytelling.",
+  "familyId": "everyday_objects",
+  "level": "1",
+  "isCombo": false,
+  "adminPriority": 5,
+  "rating": 4.7,
+  "reviewCount": 41
+}

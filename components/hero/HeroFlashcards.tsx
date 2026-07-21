@@ -1,8 +1,9 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import Image from "next/image";
+import { asset } from "@/lib/site";
 
 /* Scripted intro, then interactive:
    step 0  nothing
@@ -19,15 +20,15 @@ type CardDef = {
 };
 
 const CARDS: CardDef[] = [
-  { id: "c1", front: "/cards/1-front.jpg", back: "/cards/1-back.jpg" },
-  { id: "c3", front: "/cards/3-front.jpg", back: "/cards/3-back.jpg" },
-  { id: "c2", front: "/cards/2-front.jpg", back: "/cards/2-back.jpg" },
+  { id: "c1", front: "/cards/1-front.png", back: "/cards/1-back.jpg" },
+  { id: "c3", front: "/cards/3-front.png", back: "/cards/3-back.jpg" },
+  { id: "c2", front: "/cards/2-front.png", back: "/cards/2-back.jpg" },
 ];
 
 const SLOT_X = [-198, 0, 198];
 const SLOT_ROT = [-5, 2.5, -3];
 const CARD_W = 176;
-const CARD_H = 248;
+const CARD_H = 258;
 
 export default function HeroFlashcards() {
   const reduceMotion = useReducedMotion();
@@ -185,8 +186,8 @@ function CardFace({
         {/* ── Front face ── */}
         <div className="backface-hidden absolute inset-0 overflow-hidden rounded-2xl shadow-lift">
           <Image
-            src={card.front}
-            alt="Lernzeit flashcard front"
+            src={asset(card.front)}
+            alt="LernZeit flashcard front"
             fill
             sizes="176px"
             className="object-cover"
@@ -204,8 +205,8 @@ function CardFace({
           style={{ transform: "rotateY(180deg)" }}
         >
           <Image
-            src={card.back}
-            alt="Lernzeit flashcard back"
+            src={asset(card.back)}
+            alt="LernZeit flashcard back"
             fill
             sizes="176px"
             className="object-cover"

@@ -26,7 +26,7 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 flex flex-col items-center pt-4 px-5 pointer-events-none">
       {/* Pill navbar */}
       <div
-        className={`pointer-events-auto w-full max-w-3xl transition-all duration-300 ${
+        className={`pointer-events-auto w-full max-w-4xl transition-all duration-300 ${
           scrolled ? "shadow-[0_8px_32px_rgb(0_0_0/0.12)]" : "shadow-[0_4px_24px_rgb(0_0_0/0.08)]"
         }`}
         style={{
@@ -38,12 +38,12 @@ export default function Header() {
         }}
       >
         {/* Three-column grid: logo | nav | cta — nav is always exactly centred */}
-        <div className="grid h-[60px] items-center px-5" style={{ gridTemplateColumns: "1fr auto 1fr" }}>
+        <div className="grid h-[68px] items-center px-6" style={{ gridTemplateColumns: "1fr auto 1fr", columnGap: "16px" }}>
           {/* Logo — left */}
           <Logo />
 
           {/* Nav links — centre */}
-          <nav className="hidden md:flex items-center gap-7" aria-label="Main">
+          <nav className="hidden md:flex items-center gap-1" aria-label="Main">
             {nav.map((item) => {
               const active =
                 item.href === "/"
@@ -53,13 +53,20 @@ export default function Header() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`text-[14px] transition-colors ${
+                  aria-current={active ? "page" : undefined}
+                  className={`group relative whitespace-nowrap rounded-full px-4 py-2.5 text-[14px] tracking-tight transition-all duration-300 ease-out ${
                     active
-                      ? "font-semibold text-ink"
-                      : "font-medium text-ink-soft hover:text-ink"
+                      ? "font-semibold text-paper"
+                      : "font-medium text-ink-soft hover:-translate-y-0.5 hover:text-ink"
                   }`}
                 >
-                  {item.label}
+                  {active && (
+                    <span className="absolute inset-0 rounded-full bg-ink shadow-[0_6px_16px_-4px_rgba(27,23,18,0.4)]" />
+                  )}
+                  {!active && (
+                    <span className="absolute inset-0 scale-90 rounded-full bg-paper-deep opacity-0 shadow-[0_4px_12px_-2px_rgba(27,23,18,0.12)] transition-all duration-300 ease-out group-hover:scale-100 group-hover:opacity-100" />
+                  )}
+                  <span className="relative">{item.label}</span>
                 </Link>
               );
             })}
@@ -71,12 +78,18 @@ export default function Header() {
               href={site.amazonStoreUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:inline-flex items-center gap-2 rounded-full bg-ink px-5 py-2 text-[13px] font-semibold text-paper transition-all hover:bg-accent active:scale-95"
+              className="group relative hidden shrink-0 items-center gap-2.5 overflow-hidden rounded-full bg-ink py-2.5 pl-5 pr-2.5 text-[13.5px] font-semibold text-paper transition-all duration-300 ease-out hover:-translate-y-0.5 hover:shadow-[0_10px_24px_-6px_rgba(27,23,18,0.5)] active:translate-y-0 active:scale-95 sm:inline-flex"
             >
-              Shop on Amazon
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden>
-                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
+              <span
+                aria-hidden
+                className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/25 to-transparent transition-transform duration-700 ease-out group-hover:translate-x-full"
+              />
+              <span className="relative whitespace-nowrap">Shop on Amazon</span>
+              <span className="relative flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white/15 transition-all duration-300 ease-out group-hover:translate-x-0.5 group-hover:bg-accent">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden>
+                  <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </span>
             </a>
 
             {/* Mobile hamburger */}
@@ -111,7 +124,7 @@ export default function Header() {
 
       {/* Mobile dropdown */}
       <div
-        className={`pointer-events-auto w-full max-w-3xl mt-2 overflow-hidden transition-all duration-300 ${
+        className={`pointer-events-auto w-full max-w-4xl mt-2 overflow-hidden transition-all duration-300 ${
           open ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
         style={{

@@ -7,7 +7,9 @@ import Stars from "@/components/ui/Stars";
 import { AmazonButton } from "@/components/ui/Buttons";
 import { getCategories, getPosts } from "@/lib/cms";
 import { getProduct } from "@/lib/products";
+import { asset } from "@/lib/site";
 import featured from "@/content/featured-product.json";
+import featuredBlog from "@/content/featured-blog.json";
 
 export const metadata: Metadata = {
   title: "Learning Hub",
@@ -27,7 +29,11 @@ function formatDate(iso: string) {
 
 export default async function BlogPage() {
   const [posts, categories] = await Promise.all([getPosts(), getCategories()]);
-  const [spotlight, ...rest] = posts;
+  
+  const spotlightIndex = posts.findIndex((p) => p.slug === featuredBlog.featuredSlug);
+  const spotlight = spotlightIndex !== -1 ? posts[spotlightIndex] : posts[0];
+  const rest = posts.filter((p) => p.slug !== spotlight?.slug);
+  
   const featuredProduct = getProduct(featured.slug);
 
   return (
@@ -50,7 +56,7 @@ export default async function BlogPage() {
           >
             <div className="relative aspect-[16/10] md:aspect-auto md:min-h-[340px]">
               <Image
-                src={spotlight.coverImage}
+                src={asset(spotlight.coverImage)}
                 alt=""
                 fill
                 priority
@@ -96,7 +102,7 @@ export default async function BlogPage() {
                 </div>
                 <div className="relative aspect-[4/3]">
                   <Image
-                    src={featuredProduct.images[0]}
+                    src={asset(featuredProduct.images[0])}
                     alt={featuredProduct.title}
                     fill
                     sizes="300px"

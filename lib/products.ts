@@ -15,13 +15,19 @@ export type Product = {
   difficulty: "Beginner" | "Growing" | "Confident";
   badges: { bestSeller: boolean; newArrival: boolean; mostGifted: boolean };
   comparison: { cards: number; focus: string; format: string };
+  bestFor: string[];
+  themesIncluded: string;
+  familyId: "storytelling" | "question_quest" | "everyday_objects" | "tenses";
+  level: "none" | "1" | "2" | "combo";
+  isCombo: boolean;
+  adminPriority: number;
   rating: number;
   reviewCount: number;
 };
 
 const productsDir = path.join(process.cwd(), "content", "products");
 
-/** All products, best-known first. Add a product by dropping a JSON file into content/products/. */
+/** All products, sorted by adminPriority then reviewCount. */
 export function getProducts(): Product[] {
   return fs
     .readdirSync(productsDir)
@@ -31,8 +37,8 @@ export function getProducts(): Product[] {
         JSON.parse(fs.readFileSync(path.join(productsDir, f), "utf8")) as Product,
     )
     .sort((a, b) => {
-      if (a.badges.bestSeller !== b.badges.bestSeller)
-        return a.badges.bestSeller ? -1 : 1;
+      if (a.adminPriority !== b.adminPriority)
+        return a.adminPriority - b.adminPriority;
       return b.reviewCount - a.reviewCount;
     });
 }
@@ -56,10 +62,19 @@ export function getFilterOptions(products: Product[]) {
     learningNeeds: uniq(products.flatMap((p) => p.learningNeeds)).sort(),
     useCases: uniq(products.flatMap((p) => p.useCases)).sort(),
     ageBands: [
-      { label: "1–3 years", min: 1, max: 3 },
-      { label: "4–6 years", min: 4, max: 6 },
-      { label: "7–9 years", min: 7, max: 9 },
-      { label: "10–12 years", min: 10, max: 12 },
+      { label: "4–5 years", min: 4, max: 5 },
+      { label: "6–7 years", min: 6, max: 7 },
+      { label: "8–10 years", min: 8, max: 10 },
     ],
   };
+}
+
+/** Group products by family, useful for picker and comparison. */
+export function getProductFamilies(products: Product[]) {
+  const families: Record<string, Product[]> = {};
+  for (const p of products) {
+    if (!families[p.familyId]) families[p.familyId] = [];
+    families[p.familyId].push(p);
+  }
+  return families;
 }

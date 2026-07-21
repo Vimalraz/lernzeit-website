@@ -1,0 +1,31 @@
+{
+  "slug": "ask-questions-level-1",
+  "title": "Learn to Ask Questions — Level 1",
+  "tagline": "Real-life situations that turn natural curiosity into meaningful questions.",
+  "description": "Children observe familiar scenes, think about what is happening and practise forming clear questions. The self-checking flip-and-check design helps them explore possible answers while building communication and social understanding.",
+  "benefits": [
+    "Helps children ask better and more relevant questions",
+    "Builds curiosity, observation and early critical thinking",
+    "Encourages confident communication, empathy and good manners"
+  ],
+  "images": [
+    "/products/ask-questions-l1-1.png",
+    "/products/ask-questions-l1-2.png",
+    "/products/ask-questions-l1-3.png"
+  ],
+  "amazonUrl": "https://link.amazon/B003bHHGq",
+  "age": { "min": 4, "max": 5, "label": "Best suited for ages 4–5" },
+  "learningNeeds": ["Ask better questions", "Speak with confidence", "Strengthen logic & sequencing"],
+  "useCases": ["Quick 5–10 minute play", "Parent–child time", "Classroom or small-group use"],
+  "difficulty": "Beginner",
+  "badges": { "bestSeller": true, "newArrival": false, "mostGifted": false },
+  "comparison": { "cards": 40, "focus": "Ask better questions", "format": "Double-sided laminated cards with rounded corners" },
+  "bestFor": ["Quick 5–10 minute play", "Parent–child time", "Classroom or small-group use"],
+  "themesIncluded": "Friendship, family, school, feelings, manners, safety, curiosity and everyday life skills.",
+  "familyId": "question_quest",
+  "level": "1",
+  "isCombo": false,
+  "adminPriority": 2,
+  "rating": 4.8,
+  "reviewCount": 62
+}
