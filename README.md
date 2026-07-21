@@ -1,6 +1,6 @@
-# Lernzeit Website
+# LernZeit Website
 
-Marketing site for Lernzit flashcards: Next.js 15 frontend + headless WordPress blog.
+Marketing site for LernZeit flashcards: Next.js 15 frontend + headless WordPress blog.
 Four pages — Home, Our Story, Products, Learning Hub (blog) — all driving Amazon purchases.
 
 ## Run locally
