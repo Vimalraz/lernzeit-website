@@ -1,0 +1,164 @@
+1:"$Sreact.fragment"
+2:I[8877,["619","static/chunks/619-ba102abea3e3d0e4.js","356","static/chunks/356-358bbf29059e2e46.js","177","static/chunks/app/layout-fe36cd1da4d2d078.js"],"default"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+5:I[3938,["619","static/chunks/619-ba102abea3e3d0e4.js","309","static/chunks/309-763f7a8b082feaf1.js","356","static/chunks/356-358bbf29059e2e46.js","288","static/chunks/288-b5df04a8b2feb28e.js","974","static/chunks/app/page-c6e53afbc71b824d.js"],"default"]
+6:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","309","static/chunks/309-763f7a8b082feaf1.js","356","static/chunks/356-358bbf29059e2e46.js","953","static/chunks/app/blog/%5Bslug%5D/page-cd547193127bcab8.js"],""]
+7:I[1356,["619","static/chunks/619-ba102abea3e3d0e4.js","309","static/chunks/309-763f7a8b082feaf1.js","356","static/chunks/356-358bbf29059e2e46.js","953","static/chunks/app/blog/%5Bslug%5D/page-cd547193127bcab8.js"],"Image"]
+11:I[7150,[],""]
+:HL["/lernzeit-website/_next/static/css/1fd9476a83a46cd3.css","style"]
+0:{"P":null,"b":"fs_lviONsW-VMXoIBVuuc","p":"/lernzeit-website","c":["","blog","build-thinking-10-minutes"],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","build-thinking-10-minutes","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/lernzeit-website/_next/static/css/1fd9476a83a46cd3.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"__variable_6d26b4 __variable_2aec32","children":["$","body",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"mx-auto flex max-w-3xl flex-col items-center px-5 py-24 text-center","children":[["$","$L5",null,{"className":"h-64 w-44","ariaLabel":"404 card — flip me","front":["$","div",null,{"className":"flex h-full w-full flex-col items-center justify-center rounded-tile border border-line bg-card shadow-lift","children":[["$","span",null,{"className":"text-6xl font-bold tracking-tight","children":"404"}],["$","span",null,{"className":"mt-2 text-[12px] font-semibold uppercase tracking-[0.18em] text-ink-soft","children":"flip me"}]]}],"back":["$","div",null,{"className":"flex h-full w-full flex-col items-center justify-center rounded-tile bg-accent p-4 shadow-lift","children":["$","span",null,{"className":"font-display text-2xl italic text-white","children":"Oops — wrong card!"}]}]}],["$","h1",null,{"className":"mt-10 text-3xl font-bold tracking-tight","children":"This page seems to be missing from the deck."}],["$","p",null,{"className":"mt-3 max-w-md text-[15px] leading-relaxed text-ink-soft","children":"The page you're looking for doesn't exist or has moved. Let's get you back to the good stuff."}],["$","$L6",null,{"href":"/","className":"mt-8 rounded-full bg-ink px-8 py-4 text-[15px] font-semibold text-paper transition-colors hover:bg-accent","children":"Back to home"}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-t border-line bg-paper-deep/60","children":["$","div",null,{"className":"mx-auto max-w-6xl px-5 py-14 md:px-8","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-[1.5fr_1fr_1fr]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L6",null,{"href":"/","className":"inline-flex items-center ","aria-label":"LernZeit — home","children":["$","$L7",null,{"src":"/lernzeit-website/lernzit-logo-black.svg","alt":"LernZeit","width":220,"height":95,"className":"h-11 w-auto sm:h-12","priority":true}]}],["$","p",null,{"className":"mt-4 text-[15px] leading-relaxed text-ink-soft","children":"LernZeit Creations makes educational flashcard games for children aged 4–10, helping them build language, thinking and everyday skills through play."}],["$","div",null,{"className":"mt-5 inline-flex items-center gap-2 text-[13px] font-medium text-teal","children":[["$","svg",null,{"width":"13","height":"13","viewBox":"0 0 24 24","fill":"none","aria-hidden":true,"children":[["$","rect",null,{"x":"5","y":"10","width":"14","height":"10","rx":"2.5","stroke":"currentColor","strokeWidth":"2"}],["$","path",null,{"d":"M8 10V7a4 4 0 0 1 8 0v3","stroke":"currentColor","strokeWidth":"2"}]]}],["$","span",null,{"children":"All purchases handled securely by Amazon"}]]}],["$","p",null,{"className":"mt-4 text-[13px] font-medium text-ink-soft/60","children":"Crafted with ❤️ in Bharat"}]]}],["$","div",null,{"children":[["$","p",null,{"className":"text-[13px] font-semibold uppercase tracking-wider text-ink-soft","children":"Explore"}],["$","ul",null,{"className":"mt-4 space-y-2.5","children":[["$","li","/",{"children":["$","$L6",null,{"href":"/","className":"w-fit bg-[linear-gradient(var(--accent-deep),var(--accent-deep))] bg-[length:0%_1.5px] bg-[position:0_100%] bg-no-repeat pb-px text-[15px] text-ink transition-all duration-300 ease-out hover:bg-[length:100%_1.5px] hover:text-accent-deep","children":"Home"}]}],["$","li","/our-story",{"children":["$","$L6",null,{"href":"/our-story","className":"w-fit bg-[linear-gradient(var(--accent-deep),var(--accent-deep))] bg-[length:0%_1.5px] bg-[position:0_100%] bg-no-repeat pb-px text-[15px] text-ink transition-all duration-300 ease-out hover:bg-[length:100%_1.5px] hover:text-accent-deep","children":"Our Story"}]}],"$L8","$L9","$La"]}]]}],"$Lb"]}],"$Lc"]}]}],null]}]}]]}],{"children":["blog","$Ld",{"children":[["slug","build-thinking-10-minutes","d"],"$Le",{"children":["__PAGE__","$Lf",{},null,false]},null,false]},null,false]},null,false],"$L10",false]],"m":"$undefined","G":["$11",[]],"s":false,"S":true}
+13:I[4431,[],"OutletBoundary"]
+15:I[5278,[],"AsyncMetadataOutlet"]
+17:I[4431,[],"ViewportBoundary"]
+19:I[4431,[],"MetadataBoundary"]
+1a:"$Sreact.suspense"
+8:["$","li","/products",{"children":["$","$L6",null,{"href":"/products","className":"w-fit bg-[linear-gradient(var(--accent-deep),var(--accent-deep))] bg-[length:0%_1.5px] bg-[position:0_100%] bg-no-repeat pb-px text-[15px] text-ink transition-all duration-300 ease-out hover:bg-[length:100%_1.5px] hover:text-accent-deep","children":"Products"}]}]
+9:["$","li","/blog",{"children":["$","$L6",null,{"href":"/blog","className":"w-fit bg-[linear-gradient(var(--accent-deep),var(--accent-deep))] bg-[length:0%_1.5px] bg-[position:0_100%] bg-no-repeat pb-px text-[15px] text-ink transition-all duration-300 ease-out hover:bg-[length:100%_1.5px] hover:text-accent-deep","children":"Learning Hub"}]}]
+a:["$","li","/wall-of-love",{"children":["$","$L6",null,{"href":"/wall-of-love","className":"w-fit bg-[linear-gradient(var(--accent-deep),var(--accent-deep))] bg-[length:0%_1.5px] bg-[position:0_100%] bg-no-repeat pb-px text-[15px] text-ink transition-all duration-300 ease-out hover:bg-[length:100%_1.5px] hover:text-accent-deep","children":"Wall of Love"}]}]
+b:["$","div",null,{"children":[["$","p",null,{"className":"text-[13px] font-semibold uppercase tracking-wider text-ink-soft","children":"Connect"}],["$","ul",null,{"className":"mt-4 space-y-2.5","children":[["$","li",null,{"children":["$","a",null,{"href":"https://www.amazon.in/stores/LernZeit/page/EE0E082E-9D60-4856-855D-FF6A87C6EB14?ref_=cm_sw_r_ud_sf_stores_MW8KZZBAHJ6TEAV6JZW3","target":"_blank","rel":"noopener noreferrer","className":"inline-flex items-center gap-2 w-fit bg-[linear-gradient(var(--accent-deep),var(--accent-deep))] bg-[length:0%_1.5px] bg-[position:0_100%] bg-no-repeat pb-px text-[15px] text-ink transition-all duration-300 ease-out hover:bg-[length:100%_1.5px] hover:text-accent-deep","children":[["$","svg",null,{"width":"16","height":"16","viewBox":"0 0 24 24","fill":"none","aria-hidden":true,"children":[["$","path",null,{"d":"M6.5 17.5C10.5 20 15.5 20 19.5 17.5","stroke":"currentColor","strokeWidth":"1.8","strokeLinecap":"round"}],["$","path",null,{"d":"M17.5 16.5l2.5 1.5-1.5 2","stroke":"currentColor","strokeWidth":"1.8","strokeLinecap":"round","strokeLinejoin":"round"}],["$","path",null,{"d":"M12 3C8.7 3 6 5.7 6 9c0 2.4 1.4 4.5 3.4 5.5L9 17h6l-.4-2.5C16.6 13.5 18 11.4 18 9c0-3.3-2.7-6-6-6z","stroke":"currentColor","strokeWidth":"1.8","strokeLinecap":"round","strokeLinejoin":"round"}]]}],"LernZeit on Amazon ↗"]}]}],["$","li",null,{"children":["$","a",null,{"href":"https://www.instagram.com/lernzeit","target":"_blank","rel":"noopener noreferrer","className":"inline-flex items-center gap-2 w-fit bg-[linear-gradient(var(--accent-deep),var(--accent-deep))] bg-[length:0%_1.5px] bg-[position:0_100%] bg-no-repeat pb-px text-[15px] text-ink transition-all duration-300 ease-out hover:bg-[length:100%_1.5px] hover:text-accent-deep","children":[["$","svg",null,{"width":"16","height":"16","viewBox":"0 0 24 24","fill":"none","aria-hidden":true,"children":[["$","rect",null,{"x":"2","y":"2","width":"20","height":"20","rx":"5","stroke":"currentColor","strokeWidth":"1.8"}],["$","circle",null,{"cx":"12","cy":"12","r":"4.5","stroke":"currentColor","strokeWidth":"1.8"}],["$","circle",null,{"cx":"17.5","cy":"6.5","r":"1","fill":"currentColor"}]]}],"Instagram ↗"]}]}],["$","li",null,{"children":["$","a",null,{"href":"https://www.youtube.com/@lernzeit","target":"_blank","rel":"noopener noreferrer","className":"inline-flex items-center gap-2 w-fit bg-[linear-gradient(var(--accent-deep),var(--accent-deep))] bg-[length:0%_1.5px] bg-[position:0_100%] bg-no-repeat pb-px text-[15px] text-ink transition-all duration-300 ease-out hover:bg-[length:100%_1.5px] hover:text-accent-deep","children":[["$","svg",null,{"width":"16","height":"16","viewBox":"0 0 24 24","fill":"none","aria-hidden":true,"children":[["$","rect",null,{"x":"2","y":"5","width":"20","height":"14","rx":"4","stroke":"currentColor","strokeWidth":"1.8"}],["$","path",null,{"d":"M10 9l5 3-5 3V9z","stroke":"currentColor","strokeWidth":"1.8","strokeLinejoin":"round"}]]}],"YouTube ↗"]}]}],["$","li",null,{"children":["$","$L6",null,{"href":"/our-story#contact","className":"w-fit bg-[linear-gradient(var(--accent-deep),var(--accent-deep))] bg-[length:0%_1.5px] bg-[position:0_100%] bg-no-repeat pb-px text-[15px] text-ink transition-all duration-300 ease-out hover:bg-[length:100%_1.5px] hover:text-accent-deep","children":"Contact us"}]}]]}]]}]
+c:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-line pt-6 text-[13px] text-ink-soft sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":"© 2026 LernZeit Creations. All rights reserved."}],["$","p",null,{"children":"Crafted with ❤️ in Bharat"}]]}]
+d:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+e:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+f:["$","$1","c",{"children":["$L12",null,["$","$L13",null,{"children":["$L14",["$","$L15",null,{"promise":"$@16"}]]}]]}]
+10:["$","$1","h",{"children":[null,[["$","$L17",null,{"children":"$L18"}],null],["$","$L19",null,{"children":["$","div",null,{"hidden":true,"children":["$","$1a",null,{"fallback":null,"children":"$L1b"}]}]}]]}]
+1c:I[7664,["619","static/chunks/619-ba102abea3e3d0e4.js","309","static/chunks/309-763f7a8b082feaf1.js","356","static/chunks/356-358bbf29059e2e46.js","953","static/chunks/app/blog/%5Bslug%5D/page-cd547193127bcab8.js"],"default"]
+1d:T2f9b,<h2><strong>How to Build Your Child's Thinking Skills at Home in Just 10 Minutes a Day</strong></h2>
+<h2><strong>Quick Summary</strong></h2>
+<p>Home learning does not need worksheets, screens, or a long lesson plan.</p>
+<p>Ten focused minutes can practise observation, sequencing, reasoning, vocabulary, and communication.</p>
+<p>Use a simple routine: observe for two minutes, arrange for two, discuss for three, and retell for three.</p>
+<p>Familiar stories, routines, photographs, or picture cards keep preparation minimal.</p>
+<p>Most parents want to support their child's learning, but after school, work, homework, meals, and bedtime, very little time remains. Home learning does not have to become another class. A short, repeatable ten-minute conversation can help children practise observation, sequencing, logical thinking, cause and effect, vocabulary, and expression. This article gives parents of children aged 4-10 a practical routine requiring little preparation. Ten minutes is not a magic number; it is simply a manageable place to begin.</p>
+<h2><strong>Why Helping at Home Can Feel Difficult</strong></h2>
+<p>Many parents are not short of interest. They are short of time, energy, and clear ideas.</p>
+<p>A 2025 UK survey by the found that lack of time due to work was the most frequently reported barrier to shared learning activities, mentioned by 44.8% of surveyed parents and carers of children aged five and under. Cost and limited availability of local activities were also common barriers. The survey is not an Indian study, but the practical challenge may feel familiar to many working families.</p>
+<p>Children also learn through responsive conversation. Harvard's Center on the Developing Child describes as a back-and-forth exchange in which a child communicates and a caring adult notices and responds. These exchanges support early language and social development. ()</p>
+<p>The reassuring message is that you do not need to recreate school at home. You need a small activity, a few thoughtful prompts, and space for your child to think aloud.</p>
+<h2><strong>What Thinking Skills Can Ten Minutes Practise?</strong></h2>
+<p>A short picture or storytelling activity can bring several skills together:</p>
+<p><strong>Observation:</strong> noticing people, objects, actions, expressions, and changes.</p>
+<p><strong>Sequencing:</strong> deciding what happened first, next, and last.</p>
+<p><strong>Cause and effect:</strong> explaining why something happened and what resulted.</p>
+<p><strong>Communication:</strong> finding words, forming sentences, and connecting ideas.</p>
+<p><strong>Problem solving:</strong> predicting what may happen next or suggesting another response.</p>
+<p>Children use these skills while getting ready for school, understanding why a wet floor is unsafe, explaining a disagreement, or following steps in a maths problem.</p>
+<p> as identifying the beginning, middle, and end so events can be retold in logical order. It also connects sequencing with more advanced understanding of relationships such as cause and effect. ()</p>
+<h2><strong>The Simple 10-Minute Thinking Routine</strong></h2>
+<p>Use a short picture story, three to five sequencing cards, a wordless book, or a family photograph. A timer is optional; the routine should not feel like a race.</p>
+<h3><strong>Minutes 1-2: Observe</strong></h3>
+<p>Place the picture or cards where your child can see them. Ask one or two prompts:</p>
+<p>"What do you notice?"</p>
+<p>"Who can you see?"</p>
+<p>"What looks important?"</p>
+<p>"How might this person be feeling?"</p>
+<p>Give the child time to look. When the answer is one word, accept and expand it naturally.</p>
+<h2><strong>Child:</strong> "Water."</h2>
+<h2><strong>Parent:</strong> "Yes, there is water on the floor. I wonder how it got there."</h2>
+<p>The child now has something concrete to observe and discuss instead of having to invent a topic from nothing.</p>
+<h3><strong>Minutes 3-4: Arrange</strong></h3>
+<p>Mix the pictures and ask the child to place them in a sensible order.</p>
+<p>Ask:</p>
+<p>"What must happen first?"</p>
+<p>"Which picture comes next?"</p>
+<p>"How do you know this is last?"</p>
+<p>"Could these two be swapped?"</p>
+<p>Do not correct immediately. Ask the child to explain the choice. Some sequences have one necessary order, while others allow more than one reasonable interpretation.</p>
+<h3><strong>Minutes 5-7: Ask "Why?" and "What Next?"</strong></h3>
+<p>Choose only two or three questions:</p>
+<p>"Why did this happen?"</p>
+<p>"What changed?"</p>
+<p>"What might happen next?"</p>
+<p>"What could the character do differently?"</p>
+<p>"What would you do?"</p>
+<p>This stage lets children practise cause and effect, prediction, emotional understanding, and problem solving.</p>
+<p>Ask, "What makes you think that?" when the reasoning matters more than one expected answer.</p>
+<h3><strong>Minutes 8-10: Retell</strong></h3>
+<p>Invite your child to tell the sequence in their own words.</p>
+<p>Useful sentence starters include:</p>
+<p>"First…"</p>
+<p>"After that…"</p>
+<p>"Because…"</p>
+<p>"Finally…"</p>
+<p>Let the child finish before correcting grammar. When the retelling is brief, model a slightly fuller version and invite one extra detail.</p>
+<p>Interactive story conversations that include questions, predictions, and child participation encourage children to engage with a story rather than listen passively. The goal is not a polished performance; it is organising and communicating an idea. ()</p>
+<h2><strong>Four Low-Prep Variations for Busy Homes</strong></h2>
+<h3><strong>1. Use a Daily Routine</strong></h3>
+<p>Ask your child to explain the steps involved in brushing teeth, packing the school bag, making nimbu pani, tidying toys, or preparing for bed.</p>
+<p>Deliberately place one step in the wrong position and ask:</p>
+<p>"What would happen if we did this first?"</p>
+<p>This turns a familiar routine into a sequencing and reasoning activity without creating additional work for the parent.</p>
+<h3><strong>2. Use a Family or Festival Photograph</strong></h3>
+<p>Choose a photograph of visiting grandparents, making rangoli, decorating for a festival, or sharing a family meal.</p>
+<p>Ask:</p>
+<p>"What happened before this photograph?"</p>
+<p>"What may have happened afterwards?"</p>
+<p>"How might each person have felt?"</p>
+<p>The child can draw on a familiar experience while practising memory, vocabulary, sequencing, and emotional understanding.</p>
+<h3><strong>3. Turn a Small Problem Into a Story</strong></h3>
+<p>Use an everyday situation: crayons were left on the floor, a water bottle leaked inside a school bag, or two children wanted the same toy.</p>
+<p>Ask the child to describe:</p>
+<p>What the problem is.</p>
+<p>What may have caused it.</p>
+<p>Two possible solutions.</p>
+<p>What could happen after each solution.</p>
+<p>The purpose is not to find the adult's preferred answer immediately. It is to help the child connect choices with possible outcomes.</p>
+<h3><strong>4. Let the Child Lead</strong></h3>
+<p>Once the routine becomes familiar, exchange roles. Let your child arrange the pictures and ask you the questions.</p>
+<p>You can deliberately give an unusual answer and allow the child to question your reasoning. Becoming the storyteller keeps the activity playful and reduces the feeling of being assessed.</p>
+<h2><strong>Age-Wise Guidance</strong></h2>
+<h3><strong>Ages 4-5</strong></h3>
+<p>Use two- or three-step sequences based on familiar routines.</p>
+<p>Focus on naming actions, identifying simple feelings, and using "first," "then," and "last." Accept pointing, single words, and short sentences. Expand the child's answer without demanding that they repeat your sentence perfectly.</p>
+<h3><strong>Ages 6-7</strong></h3>
+<p>Use four- or five-step stories.</p>
+<p>Ask why the order matters, connect a cause with its result, and encourage a retelling with a clear beginning and ending. Children can also predict one sensible next event or identify what might happen if a step is skipped.</p>
+<h3><strong>Ages 8-10</strong></h3>
+<p>Ask for alternative explanations, different viewpoints, and more than one solution.</p>
+<p>Children can justify an order, identify short- and long-term consequences, compare possible decisions, or turn the oral story into a short paragraph or comic strip when time permits.</p>
+<h2><strong>When the Routine Does Not Go Smoothly</strong></h2>
+<p>Some days your child may be tired, restless, or unwilling to talk. Stop after the observation stage or let the child choose the pictures. A two-minute exchange still provides meaningful interaction.</p>
+<p>Avoid asking too many questions, correcting every sentence, or insisting on the adult's interpretation. A useful rhythm is:</p>
+<p>Ask. Pause. Listen. Respond.</p>
+<p>In multilingual Indian homes, allow the child to explain first in the language that feels most comfortable. The American Speech-Language-Hearing Association encourages parents to speak with children in the languages they use most comfortably and to value communication practice over perfection. ()</p>
+<p>The child can then learn a few relevant words or sentences in the language used at school.</p>
+<h2><strong>A Low-Prep, Screen-Free Tool for the Routine</strong></h2>
+<p>Picture-based flashcards suit this ten-minute structure because parents do not need to print worksheets, search for an activity, or plan a lesson.</p>
+<p> use five-card story sets that children can observe, arrange, narrate, and discuss. A parent can choose one set and follow the same four stages:</p>
+<p>Notice the details.</p>
+<p>Decide the order.</p>
+<p>Explore "why" and "what next."</p>
+<p>Retell the complete story.</p>
+<p>The cards can help children practise sequencing, cause and effect, vocabulary, communication, and problem solving through relaxed parent-child interaction.</p>
+<p>A younger child may describe one picture at a time. An older child can defend an order, predict consequences, discuss how a character feels, or propose another ending.</p>
+<p>The flashcards are one practical, screen-free option alongside family photographs, wordless books, household routines, and stories drawn from daily life. The learning comes from the conversation around the pictures — not from finishing the activity quickly or finding one perfect answer.</p>
+<h2><strong>Frequently Asked Questions</strong></h2>
+<h3><strong>Do We Have to Practise Every Day?</strong></h3>
+<p>No. "Ten minutes a day" is a simple routine, not a strict rule.</p>
+<p>Begin with three or four short sessions a week when that is more realistic. A routine that fits comfortably into family life is more useful than an ambitious plan that quickly becomes stressful.</p>
+<h3><strong>What If My Child Gives the Wrong Order?</strong></h3>
+<p>Ask, "Can you explain your thinking?" before changing it.</p>
+<p>The child may have noticed a detail you missed or created another logical version of the story. Correct gently when the sequence depends on a factual or safety-related order.</p>
+<h3><strong>Is This a Replacement for Reading Together?</strong></h3>
+<p>No. Shared reading offers opportunities for vocabulary, knowledge, imagination, and connection.</p>
+<p>Use the ten-minute routine after reading, on a particularly busy day, or as a separate thinking activity. The two practices can complement each other.</p>
+<h2><strong>Key Takeaways</strong></h2>
+<p>Supporting learning at home does not require a long lesson or elaborate preparation.</p>
+<p>A ten-minute observe-arrange-question-retell routine can practise several skills together.</p>
+<p>Familiar routines, photographs, stories, and picture cards keep the activity relevant and low-cost.</p>
+<p>Gentle questions and patient listening are more useful than constant correction.</p>
+<p>The best routine is one that fits your family well enough to repeat.</p>
+<h2><strong>References</strong></h2>
+<p>National Literacy Trust., published 2026.</p>
+<p>National Literacy Trust., 2026. ()</p>
+<p>Center on the Developing Child at Harvard University.. ()</p>
+<p>Reading Rockets.. ()</p>
+<p>Reading Rockets.. ()</p>
+<p>American Speech-Language-Hearing Association.. ()</p>12:["$","article",null,{"className":"mx-auto max-w-3xl px-5 py-12 md:px-8 md:py-16","children":[["$","$L1c",null,{"children":[["$","nav",null,{"className":"text-[14px] text-ink-soft","aria-label":"Breadcrumb","children":[["$","$L6",null,{"href":"/blog","className":"hover:text-ink","children":"Learning Hub"}],["$","span",null,{"className":"mx-2","aria-hidden":true,"children":"/"}],["$","span",null,{"className":"font-medium text-ink","children":"Thinking & Problem Solving"}]]}],["$","h1",null,{"className":"mt-6 text-3xl font-bold leading-[1.15] tracking-tight md:text-[44px]","children":"How to Build Your Child's Thinking Skills at Home in Just 10 Minutes a Day"}],["$","p",null,{"className":"mt-4 text-[14px] font-medium text-ink-soft","children":["July 8, 2026"," ","· ",8," min read · ","Thinking & Problem Solving"]}]]}],["$","$L1c",null,{"delay":0.1,"children":["$","div",null,{"className":"relative mt-8 aspect-[16/9] overflow-hidden rounded-tile border border-line bg-paper-deep","children":["$","$L7",null,{"src":"/lernzeit-website/hero/slide9.png","alt":"","fill":true,"priority":true,"sizes":"(max-width: 768px) 92vw, 720px","className":"object-cover"}]}]}],["$","div",null,{"className":"prose-lz mt-10","dangerouslySetInnerHTML":{"__html":"$1d"}}],"$L1e","$L1f"]}]
+1e:["$","aside",null,{"className":"mt-14 overflow-hidden rounded-tile border border-line bg-paper-deep/60","children":["$","div",null,{"className":"grid sm:grid-cols-[200px_1fr]","children":[["$","div",null,{"className":"relative aspect-[4/3] sm:aspect-auto","children":["$","$L7",null,{"src":"/lernzeit-website/products/storytelling-1.png","alt":"Storytelling & Sequencing Flashcards","fill":true,"sizes":"(max-width: 640px) 92vw, 200px","className":"object-cover"}]}],["$","div",null,{"className":"p-6","children":[["$","p",null,{"className":"text-[12px] font-semibold uppercase tracking-wider text-accent","children":"Put it into practice"}],["$","h2",null,{"className":"mt-2 text-xl font-bold tracking-tight","children":"Storytelling & Sequencing Flashcards"}],["$","div",null,{"className":"mt-1.5","children":["$","span",null,{"className":"inline-flex items-center gap-1.5 ","aria-label":"Rated 4.8 out of 5 from 47 reviews","children":[["$","span",null,{"className":"flex gap-0.5","aria-hidden":true,"children":[["$","svg","1",{"width":"14","height":"14","viewBox":"0 0 24 24","children":["$","path",null,{"d":"M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z","fill":"var(--gold)"}]}],["$","svg","2",{"width":"14","height":"14","viewBox":"0 0 24 24","children":["$","path",null,{"d":"M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z","fill":"var(--gold)"}]}],["$","svg","3",{"width":"14","height":"14","viewBox":"0 0 24 24","children":["$","path",null,{"d":"M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z","fill":"var(--gold)"}]}],["$","svg","4",{"width":"14","height":"14","viewBox":"0 0 24 24","children":["$","path",null,{"d":"M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z","fill":"var(--gold)"}]}],["$","svg","5",{"width":"14","height":"14","viewBox":"0 0 24 24","children":["$","path",null,{"d":"M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z","fill":"var(--gold)"}]}]]}],["$","span",null,{"className":"text-[13px] font-semibold text-ink","children":"4.8"}],["$","span",null,{"className":"text-[13px] text-ink-soft","children":["(","47",")"]}]]}]}],["$","p",null,{"className":"mt-2 text-[14px] text-ink-soft","children":"Five-card stories that help children put ideas in order."}],["$","div",null,{"className":"mt-4 flex flex-wrap items-center gap-4","children":[["$","a",null,{"href":"https://amzn.to/4cf5D9c","target":"_blank","rel":"noopener noreferrer","className":"group relative overflow-hidden inline-flex items-center justify-center gap-2.5 rounded-full bg-ink font-semibold text-paper transition-all duration-300 ease-out hover:-translate-y-0.5 hover:shadow-lift active:translate-y-0 active:scale-[0.97] px-6 py-3 text-[15px] !px-5 !py-2.5 !text-[14px]","children":[["$","span",null,{"aria-hidden":true,"className":"pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/25 to-transparent transition-transform duration-700 ease-out group-hover:translate-x-full"}],["$","span",null,{"className":"relative flex h-6 w-6 flex-none items-center justify-center rounded-full bg-white/15 transition-colors duration-300 ease-out group-hover:bg-accent","children":["$","svg",null,{"width":"16","height":"16","viewBox":"0 0 24 24","fill":"none","aria-hidden":true,"children":[["$","path",null,{"d":"M3 4h2.4l2.2 11.2a2 2 0 0 0 2 1.8h7.9a2 2 0 0 0 2-1.6L21 8H6","stroke":"currentColor","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round"}],["$","circle",null,{"cx":"10","cy":"20.5","r":"1.5","fill":"currentColor"}],["$","circle",null,{"cx":"17.5","cy":"20.5","r":"1.5","fill":"currentColor"}]]}]}],["$","span",null,{"className":"relative","children":"Buy on Amazon"}]]}],["$","$L6",null,{"href":"/products/storytelling-sequencing","className":"text-[14px] font-semibold text-teal hover:text-teal-deep","children":"Learn more →"}]]}]]}]]}]}]
+1f:["$","div",null,{"className":"mt-10 border-t border-line pt-8","children":["$","$L6",null,{"href":"/blog","className":"text-[15px] font-semibold text-teal hover:text-teal-deep","children":"← All articles"}]}]
+18:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+14:null
+20:I[622,[],"IconMark"]
+16:{"metadata":[["$","title","0",{"children":"How to Build Your Child's Thinking Skills at Home in Just 10 Minutes a Day — LernZeit"}],["$","meta","1",{"name":"description","content":"Try a simple 10-minute routine for children aged 4-10 that builds observation, sequencing, reasoning, communication, and problem-solving skills."}],["$","meta","2",{"property":"og:title","content":"How to Build Your Child's Thinking Skills at Home in Just 10 Minutes a Day — LernZeit"}],["$","meta","3",{"property":"og:description","content":"Try a simple 10-minute routine for children aged 4-10 that builds observation, sequencing, reasoning, communication, and problem-solving skills."}],["$","meta","4",{"property":"og:image","content":"https://lernzeit.com/hero/slide9.png"}],["$","meta","5",{"property":"og:type","content":"article"}],["$","meta","6",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","7",{"name":"twitter:title","content":"How to Build Your Child's Thinking Skills at Home in Just 10 Minutes a Day — LernZeit"}],["$","meta","8",{"name":"twitter:description","content":"Try a simple 10-minute routine for children aged 4-10 that builds observation, sequencing, reasoning, communication, and problem-solving skills."}],["$","meta","9",{"name":"twitter:image","content":"https://lernzeit.com/hero/slide9.png"}],["$","link","10",{"rel":"icon","href":"/lernzeit-website/icon.svg?b91f480e4f917d62","type":"image/svg+xml","sizes":"any"}],["$","$L20","11",{}]],"error":null,"digest":"$undefined"}
+1b:"$16:metadata"

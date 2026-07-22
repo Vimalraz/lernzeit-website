@@ -1,0 +1,135 @@
+1:"$Sreact.fragment"
+2:I[8877,["619","static/chunks/619-ba102abea3e3d0e4.js","356","static/chunks/356-358bbf29059e2e46.js","177","static/chunks/app/layout-fe36cd1da4d2d078.js"],"default"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+5:I[3938,["619","static/chunks/619-ba102abea3e3d0e4.js","309","static/chunks/309-763f7a8b082feaf1.js","356","static/chunks/356-358bbf29059e2e46.js","288","static/chunks/288-b5df04a8b2feb28e.js","974","static/chunks/app/page-c6e53afbc71b824d.js"],"default"]
+6:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","309","static/chunks/309-763f7a8b082feaf1.js","356","static/chunks/356-358bbf29059e2e46.js","953","static/chunks/app/blog/%5Bslug%5D/page-cd547193127bcab8.js"],""]
+7:I[1356,["619","static/chunks/619-ba102abea3e3d0e4.js","309","static/chunks/309-763f7a8b082feaf1.js","356","static/chunks/356-358bbf29059e2e46.js","953","static/chunks/app/blog/%5Bslug%5D/page-cd547193127bcab8.js"],"Image"]
+11:I[7150,[],""]
+:HL["/lernzeit-website/_next/static/css/1fd9476a83a46cd3.css","style"]
+0:{"P":null,"b":"fs_lviONsW-VMXoIBVuuc","p":"/lernzeit-website","c":["","blog","15-minute-learning-ritual"],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","15-minute-learning-ritual","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/lernzeit-website/_next/static/css/1fd9476a83a46cd3.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"__variable_6d26b4 __variable_2aec32","children":["$","body",null,{"className":"min-h-screen flex flex-col","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"mx-auto flex max-w-3xl flex-col items-center px-5 py-24 text-center","children":[["$","$L5",null,{"className":"h-64 w-44","ariaLabel":"404 card — flip me","front":["$","div",null,{"className":"flex h-full w-full flex-col items-center justify-center rounded-tile border border-line bg-card shadow-lift","children":[["$","span",null,{"className":"text-6xl font-bold tracking-tight","children":"404"}],["$","span",null,{"className":"mt-2 text-[12px] font-semibold uppercase tracking-[0.18em] text-ink-soft","children":"flip me"}]]}],"back":["$","div",null,{"className":"flex h-full w-full flex-col items-center justify-center rounded-tile bg-accent p-4 shadow-lift","children":["$","span",null,{"className":"font-display text-2xl italic text-white","children":"Oops — wrong card!"}]}]}],["$","h1",null,{"className":"mt-10 text-3xl font-bold tracking-tight","children":"This page seems to be missing from the deck."}],["$","p",null,{"className":"mt-3 max-w-md text-[15px] leading-relaxed text-ink-soft","children":"The page you're looking for doesn't exist or has moved. Let's get you back to the good stuff."}],["$","$L6",null,{"href":"/","className":"mt-8 rounded-full bg-ink px-8 py-4 text-[15px] font-semibold text-paper transition-colors hover:bg-accent","children":"Back to home"}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-t border-line bg-paper-deep/60","children":["$","div",null,{"className":"mx-auto max-w-6xl px-5 py-14 md:px-8","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-[1.5fr_1fr_1fr]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L6",null,{"href":"/","className":"inline-flex items-center ","aria-label":"LernZeit — home","children":["$","$L7",null,{"src":"/lernzeit-website/lernzit-logo-black.svg","alt":"LernZeit","width":220,"height":95,"className":"h-11 w-auto sm:h-12","priority":true}]}],["$","p",null,{"className":"mt-4 text-[15px] leading-relaxed text-ink-soft","children":"LernZeit Creations makes educational flashcard games for children aged 4–10, helping them build language, thinking and everyday skills through play."}],["$","div",null,{"className":"mt-5 inline-flex items-center gap-2 text-[13px] font-medium text-teal","children":[["$","svg",null,{"width":"13","height":"13","viewBox":"0 0 24 24","fill":"none","aria-hidden":true,"children":[["$","rect",null,{"x":"5","y":"10","width":"14","height":"10","rx":"2.5","stroke":"currentColor","strokeWidth":"2"}],["$","path",null,{"d":"M8 10V7a4 4 0 0 1 8 0v3","stroke":"currentColor","strokeWidth":"2"}]]}],["$","span",null,{"children":"All purchases handled securely by Amazon"}]]}],["$","p",null,{"className":"mt-4 text-[13px] font-medium text-ink-soft/60","children":"Crafted with ❤️ in Bharat"}]]}],["$","div",null,{"children":[["$","p",null,{"className":"text-[13px] font-semibold uppercase tracking-wider text-ink-soft","children":"Explore"}],["$","ul",null,{"className":"mt-4 space-y-2.5","children":[["$","li","/",{"children":["$","$L6",null,{"href":"/","className":"w-fit bg-[linear-gradient(var(--accent-deep),var(--accent-deep))] bg-[length:0%_1.5px] bg-[position:0_100%] bg-no-repeat pb-px text-[15px] text-ink transition-all duration-300 ease-out hover:bg-[length:100%_1.5px] hover:text-accent-deep","children":"Home"}]}],["$","li","/our-story",{"children":["$","$L6",null,{"href":"/our-story","className":"w-fit bg-[linear-gradient(var(--accent-deep),var(--accent-deep))] bg-[length:0%_1.5px] bg-[position:0_100%] bg-no-repeat pb-px text-[15px] text-ink transition-all duration-300 ease-out hover:bg-[length:100%_1.5px] hover:text-accent-deep","children":"Our Story"}]}],"$L8","$L9","$La"]}]]}],"$Lb"]}],"$Lc"]}]}],null]}]}]]}],{"children":["blog","$Ld",{"children":[["slug","15-minute-learning-ritual","d"],"$Le",{"children":["__PAGE__","$Lf",{},null,false]},null,false]},null,false]},null,false],"$L10",false]],"m":"$undefined","G":["$11",[]],"s":false,"S":true}
+13:I[4431,[],"OutletBoundary"]
+15:I[5278,[],"AsyncMetadataOutlet"]
+17:I[4431,[],"ViewportBoundary"]
+19:I[4431,[],"MetadataBoundary"]
+1a:"$Sreact.suspense"
+8:["$","li","/products",{"children":["$","$L6",null,{"href":"/products","className":"w-fit bg-[linear-gradient(var(--accent-deep),var(--accent-deep))] bg-[length:0%_1.5px] bg-[position:0_100%] bg-no-repeat pb-px text-[15px] text-ink transition-all duration-300 ease-out hover:bg-[length:100%_1.5px] hover:text-accent-deep","children":"Products"}]}]
+9:["$","li","/blog",{"children":["$","$L6",null,{"href":"/blog","className":"w-fit bg-[linear-gradient(var(--accent-deep),var(--accent-deep))] bg-[length:0%_1.5px] bg-[position:0_100%] bg-no-repeat pb-px text-[15px] text-ink transition-all duration-300 ease-out hover:bg-[length:100%_1.5px] hover:text-accent-deep","children":"Learning Hub"}]}]
+a:["$","li","/wall-of-love",{"children":["$","$L6",null,{"href":"/wall-of-love","className":"w-fit bg-[linear-gradient(var(--accent-deep),var(--accent-deep))] bg-[length:0%_1.5px] bg-[position:0_100%] bg-no-repeat pb-px text-[15px] text-ink transition-all duration-300 ease-out hover:bg-[length:100%_1.5px] hover:text-accent-deep","children":"Wall of Love"}]}]
+b:["$","div",null,{"children":[["$","p",null,{"className":"text-[13px] font-semibold uppercase tracking-wider text-ink-soft","children":"Connect"}],["$","ul",null,{"className":"mt-4 space-y-2.5","children":[["$","li",null,{"children":["$","a",null,{"href":"https://www.amazon.in/stores/LernZeit/page/EE0E082E-9D60-4856-855D-FF6A87C6EB14?ref_=cm_sw_r_ud_sf_stores_MW8KZZBAHJ6TEAV6JZW3","target":"_blank","rel":"noopener noreferrer","className":"inline-flex items-center gap-2 w-fit bg-[linear-gradient(var(--accent-deep),var(--accent-deep))] bg-[length:0%_1.5px] bg-[position:0_100%] bg-no-repeat pb-px text-[15px] text-ink transition-all duration-300 ease-out hover:bg-[length:100%_1.5px] hover:text-accent-deep","children":[["$","svg",null,{"width":"16","height":"16","viewBox":"0 0 24 24","fill":"none","aria-hidden":true,"children":[["$","path",null,{"d":"M6.5 17.5C10.5 20 15.5 20 19.5 17.5","stroke":"currentColor","strokeWidth":"1.8","strokeLinecap":"round"}],["$","path",null,{"d":"M17.5 16.5l2.5 1.5-1.5 2","stroke":"currentColor","strokeWidth":"1.8","strokeLinecap":"round","strokeLinejoin":"round"}],["$","path",null,{"d":"M12 3C8.7 3 6 5.7 6 9c0 2.4 1.4 4.5 3.4 5.5L9 17h6l-.4-2.5C16.6 13.5 18 11.4 18 9c0-3.3-2.7-6-6-6z","stroke":"currentColor","strokeWidth":"1.8","strokeLinecap":"round","strokeLinejoin":"round"}]]}],"LernZeit on Amazon ↗"]}]}],["$","li",null,{"children":["$","a",null,{"href":"https://www.instagram.com/lernzeit","target":"_blank","rel":"noopener noreferrer","className":"inline-flex items-center gap-2 w-fit bg-[linear-gradient(var(--accent-deep),var(--accent-deep))] bg-[length:0%_1.5px] bg-[position:0_100%] bg-no-repeat pb-px text-[15px] text-ink transition-all duration-300 ease-out hover:bg-[length:100%_1.5px] hover:text-accent-deep","children":[["$","svg",null,{"width":"16","height":"16","viewBox":"0 0 24 24","fill":"none","aria-hidden":true,"children":[["$","rect",null,{"x":"2","y":"2","width":"20","height":"20","rx":"5","stroke":"currentColor","strokeWidth":"1.8"}],["$","circle",null,{"cx":"12","cy":"12","r":"4.5","stroke":"currentColor","strokeWidth":"1.8"}],["$","circle",null,{"cx":"17.5","cy":"6.5","r":"1","fill":"currentColor"}]]}],"Instagram ↗"]}]}],["$","li",null,{"children":["$","a",null,{"href":"https://www.youtube.com/@lernzeit","target":"_blank","rel":"noopener noreferrer","className":"inline-flex items-center gap-2 w-fit bg-[linear-gradient(var(--accent-deep),var(--accent-deep))] bg-[length:0%_1.5px] bg-[position:0_100%] bg-no-repeat pb-px text-[15px] text-ink transition-all duration-300 ease-out hover:bg-[length:100%_1.5px] hover:text-accent-deep","children":[["$","svg",null,{"width":"16","height":"16","viewBox":"0 0 24 24","fill":"none","aria-hidden":true,"children":[["$","rect",null,{"x":"2","y":"5","width":"20","height":"14","rx":"4","stroke":"currentColor","strokeWidth":"1.8"}],["$","path",null,{"d":"M10 9l5 3-5 3V9z","stroke":"currentColor","strokeWidth":"1.8","strokeLinejoin":"round"}]]}],"YouTube ↗"]}]}],["$","li",null,{"children":["$","$L6",null,{"href":"/our-story#contact","className":"w-fit bg-[linear-gradient(var(--accent-deep),var(--accent-deep))] bg-[length:0%_1.5px] bg-[position:0_100%] bg-no-repeat pb-px text-[15px] text-ink transition-all duration-300 ease-out hover:bg-[length:100%_1.5px] hover:text-accent-deep","children":"Contact us"}]}]]}]]}]
+c:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-line pt-6 text-[13px] text-ink-soft sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":"© 2026 LernZeit Creations. All rights reserved."}],["$","p",null,{"children":"Crafted with ❤️ in Bharat"}]]}]
+d:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+e:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+f:["$","$1","c",{"children":["$L12",null,["$","$L13",null,{"children":["$L14",["$","$L15",null,{"promise":"$@16"}]]}]]}]
+10:["$","$1","h",{"children":[null,[["$","$L17",null,{"children":"$L18"}],null],["$","$L19",null,{"children":["$","div",null,{"hidden":true,"children":["$","$1a",null,{"fallback":null,"children":"$L1b"}]}]}]]}]
+1c:I[7664,["619","static/chunks/619-ba102abea3e3d0e4.js","309","static/chunks/309-763f7a8b082feaf1.js","356","static/chunks/356-358bbf29059e2e46.js","953","static/chunks/app/blog/%5Bslug%5D/page-cd547193127bcab8.js"],"default"]
+1d:T1d0f,<p><strong>15 minutes
+1 picture or short sequence
+1 story
+1 child-generated question
+1 complete sentence
+1 closing reflection</strong></p>
+<p>A useful home-learning ritual does not need a large setup. It needs a familiar beginning, a small challenge, genuine conversation and a clear ending.</p>
+<p><strong>How can parents create a 15-minute learning routine at home?</strong> Choose one picture or short card sequence, tell one story, encourage one meaningful question, build one complete sentence and close with one reflection.</p>
+<h2><strong>Why a Ritual Is Different from an Activity Plan</strong></h2>
+<p>An activity plan asks the parent to keep deciding what to teach, collect and explain. In a ritual, the structure stays familiar while the picture, question and conversation change.</p>
+<p><strong>The routine stays the same. The thinking inside it changes.</strong></p>
+<p>The minute markers below are flexible. One beat may take longer, and the family can still stop after fifteen minutes.</p>
+<h2><strong>0:00-4:00  —  The Story Beat</strong></h2>
+<p>Begin with a short picture sequence, situation card, object card, book illustration or family photograph.</p>
+<p>Invite the child to arrange or narrate what they see. They might identify the beginning, explain the problem, create a title or invent a missing event.</p>
+<p><strong>Parent:</strong> Which picture should come first?
+<strong>Child:</strong> The one where the boy sees the fallen plant.
+<strong>Parent:</strong> What happens next?
+<strong>Child:</strong> He picks it up and adds more soil.</p>
+<h2><strong>4:00-7:00  —  The Question Beat</strong></h2>
+<p>Ask the child to generate one question about the story or picture. When needed, prompt gently:</p>
+<p>What are you curious about?</p>
+<p>What information is missing?</p>
+<p>Why might this have happened?</p>
+<p>What could happen next?</p>
+<p>From the observation, "The girl is carrying a bag," a child might ask, "Where is she going?", "Why is the bag so full?" or "Who packed it?"</p>
+<p>This is not a quiz with one answer. The child is learning to notice what is unknown and participate actively in conversation.</p>
+<h2><strong>7:00-11:00  —  The Sentence Beat</strong></h2>
+<p>Choose one idea, action or object and help the child express it as a complete sentence.</p>
+<h2>Use a simple <strong>Sentence Stretch</strong>:</h2>
+<p>"Matka."</p>
+<p>It is a matka.</p>
+<p>The matka is made of clay.</p>
+<p>The family keeps drinking water in the clay matka during summer.</p>
+<p>Or stretch "Helping" into:</p>
+<p>"The child is helping his grandmother carry the basket."</p>
+<p>A useful framework is:</p>
+<h2><strong>Who or what + action or description + object or place + one useful detail</strong></h2>
+<p>Aim for one thoughtful sentence, not ten repetitive ones.</p>
+<h2><strong>11:00-15:00  —  The Reflection Beat</strong></h2>
+<p>Close with one predictable prompt:</p>
+<p>What was most interesting today?</p>
+<p>Did anything remind you of our family?</p>
+<p>Which word would you like to remember?</p>
+<p>What should tomorrow's story be about?</p>
+<p>The child may answer aloud, draw, choose a favourite card, act out one moment or place a card in a "tomorrow" basket.</p>
+<p>Reflection gives the child ownership and a calm ending. An object picture may prompt:</p>
+<p>Have you seen this at your grandparents' home?</p>
+<p>Does our family use another word for it?</p>
+<p>What modern object serves a similar purpose?</p>
+<p>The conversation can include culture without turning into a formal cultural lesson.</p>
+<h2><strong>One Picture, Fifteen Minutes: A Complete Example</strong></h2>
+<p>A child sees pictures of an overturned plant pot and a boy helping his grandmother restore the plant.</p>
+<h3><strong>Story</strong></h3>
+<p>"The pot fell. The boy saw it. He helped his grandmother put the plant back."</p>
+<h3><strong>Question</strong></h3>
+<p>"Why did the pot fall?"</p>
+<p>The parent welcomes different possibilities and asks which one seems most likely.</p>
+<h3><strong>Sentence</strong></h3>
+<p>"Boy helping" becomes:</p>
+<p>"The boy is helping his grandmother put the plant back into the pot."</p>
+<h3><strong>Reflection</strong></h3>
+<p>The child remembers watering a balcony plant and chooses a garden for tomorrow's story.</p>
+<p>This is a flow to adapt, not a script to follow word for word.</p>
+<h2><strong>Keep the Rhythm. Change One Element.</strong></h2>
+<p>Keep the pattern familiar while changing one part:</p>
+<p>use a new picture;</p>
+<p>ask a different question;</p>
+<p>retell the scene from another viewpoint;</p>
+<p>choose a new object word;</p>
+<p>let the child lead.</p>
+<p>A grandparent can join the reflection, or the child can draw instead of speaking.</p>
+<p>No reward chart or perfect streak is required. Missing a day is not failure. Return when the next calm fifteen-minute window appears.</p>
+<h2><strong>Adapt the Ritual to the Child</strong></h2>
+<h3><strong>For a Child Who Prefers Short Responses</strong></h3>
+<p>Accept pointing, choosing, acting or one-word answers before modelling a fuller sentence.</p>
+<h3><strong>For a Child Who Talks at Length</strong></h3>
+<p>Ask for a four-sentence story, one important question and one sentence to improve.</p>
+<h3><strong>For Siblings</strong></h3>
+<p>Let one child arrange, another ask, and both share a reflection.</p>
+<h3><strong>For Older Children</strong></h3>
+<p>Explore motives, alternative explanations, stronger vocabulary and changes in perspective.</p>
+<h2><strong>Build a LernZeit Ritual Basket</strong></h2>
+<p>Choose <strong>Storytelling &amp; Sequencing</strong> for narration, order, prediction and cause-and-effect thinking.</p>
+<p>Choose <strong>Learn to Ask Questions</strong> for closer observation and child-generated curiosity.</p>
+<p>Choose <strong>Everyday Bharat Objects</strong> for vocabulary, description and family connections.</p>
+<p>Two sets can be combined, or different sets can be rotated across the week. All three are not required. The ritual also works with one card, photograph or book illustration.</p>
+<h2><strong>Frequently Asked Questions</strong></h2>
+<h3><strong>Is fifteen minutes enough for a meaningful learning activity?</strong></h3>
+<p>It can be. The value comes from genuine observation, thinking and conversation, not the number of tasks completed.</p>
+<h3><strong>Does the ritual need to happen at the same time every day?</strong></h3>
+<p>No. A familiar sequence matters more than a fixed time. Use it whenever the family has a calm fifteen-minute window.</p>
+<h3><strong>What should I do when my child does not want to speak?</strong></h3>
+<p>Allow pointing, arranging, drawing or acting. Model a sentence without pressure and let the child participate quietly.</p>
+<h3><strong>Can the same picture cards be reused regularly?</strong></h3>
+<p>Yes. Change the question, viewpoint, ending, sentence detail or reflection. Familiar pictures can still lead to new thinking.</p>
+<h2><strong>The Closing Line</strong></h2>
+<p>One story.
+One question.
+One sentence.
+One reflection.</p>
+<p>The goal is not to complete a large amount of work. It is to create a small space in which the child can notice, organise, wonder, speak and connect.</p>
+<p>Choose one picture and try the ritual once without planning an entire week. LernZeit Creations' visual prompts can help families find new stories, questions, sentences and reflections while keeping the rhythm familiar.</p>12:["$","article",null,{"className":"mx-auto max-w-3xl px-5 py-12 md:px-8 md:py-16","children":[["$","$L1c",null,{"children":[["$","nav",null,{"className":"text-[14px] text-ink-soft","aria-label":"Breadcrumb","children":[["$","$L6",null,{"href":"/blog","className":"hover:text-ink","children":"Learning Hub"}],["$","span",null,{"className":"mx-2","aria-hidden":true,"children":"/"}],["$","span",null,{"className":"font-medium text-ink","children":"Learning Routines"}]]}],["$","h1",null,{"className":"mt-6 text-3xl font-bold leading-[1.15] tracking-tight md:text-[44px]","children":"How to Build a 15-Minute Learning Ritual at Home"}],["$","p",null,{"className":"mt-4 text-[14px] font-medium text-ink-soft","children":["August 19, 2026"," ","· ",5," min read · ","Learning Routines"]}]]}],["$","$L1c",null,{"delay":0.1,"children":["$","div",null,{"className":"relative mt-8 aspect-[16/9] overflow-hidden rounded-tile border border-line bg-paper-deep","children":["$","$L7",null,{"src":"/lernzeit-website/hero/slide1.png","alt":"","fill":true,"priority":true,"sizes":"(max-width: 768px) 92vw, 720px","className":"object-cover"}]}]}],["$","div",null,{"className":"prose-lz mt-10","dangerouslySetInnerHTML":{"__html":"$1d"}}],"$L1e","$L1f"]}]
+1e:["$","aside",null,{"className":"mt-14 overflow-hidden rounded-tile border border-line bg-paper-deep/60","children":["$","div",null,{"className":"grid sm:grid-cols-[200px_1fr]","children":[["$","div",null,{"className":"relative aspect-[4/3] sm:aspect-auto","children":["$","$L7",null,{"src":"/lernzeit-website/products/storytelling-1.png","alt":"Storytelling & Sequencing Flashcards","fill":true,"sizes":"(max-width: 640px) 92vw, 200px","className":"object-cover"}]}],["$","div",null,{"className":"p-6","children":[["$","p",null,{"className":"text-[12px] font-semibold uppercase tracking-wider text-accent","children":"Put it into practice"}],["$","h2",null,{"className":"mt-2 text-xl font-bold tracking-tight","children":"Storytelling & Sequencing Flashcards"}],["$","div",null,{"className":"mt-1.5","children":["$","span",null,{"className":"inline-flex items-center gap-1.5 ","aria-label":"Rated 4.8 out of 5 from 47 reviews","children":[["$","span",null,{"className":"flex gap-0.5","aria-hidden":true,"children":[["$","svg","1",{"width":"14","height":"14","viewBox":"0 0 24 24","children":["$","path",null,{"d":"M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z","fill":"var(--gold)"}]}],["$","svg","2",{"width":"14","height":"14","viewBox":"0 0 24 24","children":["$","path",null,{"d":"M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z","fill":"var(--gold)"}]}],["$","svg","3",{"width":"14","height":"14","viewBox":"0 0 24 24","children":["$","path",null,{"d":"M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z","fill":"var(--gold)"}]}],["$","svg","4",{"width":"14","height":"14","viewBox":"0 0 24 24","children":["$","path",null,{"d":"M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z","fill":"var(--gold)"}]}],["$","svg","5",{"width":"14","height":"14","viewBox":"0 0 24 24","children":["$","path",null,{"d":"M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z","fill":"var(--gold)"}]}]]}],["$","span",null,{"className":"text-[13px] font-semibold text-ink","children":"4.8"}],["$","span",null,{"className":"text-[13px] text-ink-soft","children":["(","47",")"]}]]}]}],["$","p",null,{"className":"mt-2 text-[14px] text-ink-soft","children":"Five-card stories that help children put ideas in order."}],["$","div",null,{"className":"mt-4 flex flex-wrap items-center gap-4","children":[["$","a",null,{"href":"https://amzn.to/4cf5D9c","target":"_blank","rel":"noopener noreferrer","className":"group relative overflow-hidden inline-flex items-center justify-center gap-2.5 rounded-full bg-ink font-semibold text-paper transition-all duration-300 ease-out hover:-translate-y-0.5 hover:shadow-lift active:translate-y-0 active:scale-[0.97] px-6 py-3 text-[15px] !px-5 !py-2.5 !text-[14px]","children":[["$","span",null,{"aria-hidden":true,"className":"pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/25 to-transparent transition-transform duration-700 ease-out group-hover:translate-x-full"}],["$","span",null,{"className":"relative flex h-6 w-6 flex-none items-center justify-center rounded-full bg-white/15 transition-colors duration-300 ease-out group-hover:bg-accent","children":["$","svg",null,{"width":"16","height":"16","viewBox":"0 0 24 24","fill":"none","aria-hidden":true,"children":[["$","path",null,{"d":"M3 4h2.4l2.2 11.2a2 2 0 0 0 2 1.8h7.9a2 2 0 0 0 2-1.6L21 8H6","stroke":"currentColor","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round"}],["$","circle",null,{"cx":"10","cy":"20.5","r":"1.5","fill":"currentColor"}],["$","circle",null,{"cx":"17.5","cy":"20.5","r":"1.5","fill":"currentColor"}]]}]}],["$","span",null,{"className":"relative","children":"Buy on Amazon"}]]}],["$","$L6",null,{"href":"/products/storytelling-sequencing","className":"text-[14px] font-semibold text-teal hover:text-teal-deep","children":"Learn more →"}]]}]]}]]}]}]
+1f:["$","div",null,{"className":"mt-10 border-t border-line pt-8","children":["$","$L6",null,{"href":"/blog","className":"text-[15px] font-semibold text-teal hover:text-teal-deep","children":"← All articles"}]}]
+18:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+14:null
+20:I[622,[],"IconMark"]
+16:{"metadata":[["$","title","0",{"children":"How to Build a 15-Minute Learning Ritual at Home — LernZeit"}],["$","meta","1",{"name":"description","content":"Build a manageable home-learning ritual around four connected moments: one story, one child-generated question, one complete sentence and one personal reflection. The familiar rhythm supports observation, language, curiosity and conversation without requiring elaborate daily preparation."}],["$","meta","2",{"property":"og:title","content":"How to Build a 15-Minute Learning Ritual at Home — LernZeit"}],["$","meta","3",{"property":"og:description","content":"Build a manageable home-learning ritual around four connected moments: one story, one child-generated question, one complete sentence and one personal reflection. The familiar rhythm supports observation, language, curiosity and conversation without requiring elaborate daily preparation."}],["$","meta","4",{"property":"og:image","content":"https://lernzeit.com/hero/slide1.png"}],["$","meta","5",{"property":"og:type","content":"article"}],["$","meta","6",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","7",{"name":"twitter:title","content":"How to Build a 15-Minute Learning Ritual at Home — LernZeit"}],["$","meta","8",{"name":"twitter:description","content":"Build a manageable home-learning ritual around four connected moments: one story, one child-generated question, one complete sentence and one personal reflection. The familiar rhythm supports observation, language, curiosity and conversation without requiring elaborate daily preparation."}],["$","meta","9",{"name":"twitter:image","content":"https://lernzeit.com/hero/slide1.png"}],["$","link","10",{"rel":"icon","href":"/lernzeit-website/icon.svg?b91f480e4f917d62","type":"image/svg+xml","sizes":"any"}],["$","$L20","11",{}]],"error":null,"digest":"$undefined"}
+1b:"$16:metadata"
